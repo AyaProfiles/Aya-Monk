@@ -3105,13 +3105,9 @@ TellMeWhenDB = {
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1P3cu8AAtSYM",
-					["Locked"] = true,
-					["Point"] = {
-						["y"] = -3.0517578125e-05,
-						["x"] = -0.000244140625,
-						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
-					},
 					["Name"] = "Visible APL",
+					["Columns"] = 1,
+					["Locked"] = true,
 					["Scale"] = 2.5,
 					["Conditions"] = {
 						{
@@ -7317,17 +7313,21 @@ TellMeWhenDB = {
 							},
 						}, -- [380]
 					},
-					["Columns"] = 1,
+					["Point"] = {
+						["y"] = -3.0517578125e-05,
+						["x"] = -0.000244140625,
+						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
+					},
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1TMvhh5X05mC",
-					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 9.896129608154297,
 						["x"] = 199.9112091064453,
 						["point"] = "BOTTOMLEFT",
 						["relativePoint"] = "BOTTOMLEFT",
 					},
+					["Name"] = "Visible APL Layout",
 					["Level"] = 11,
 					["Scale"] = 2.5,
 					["Conditions"] = {
@@ -11327,7 +11327,7 @@ TellMeWhenDB = {
 							},
 						}, -- [360]
 					},
-					["Name"] = "Visible APL Layout",
+					["Columns"] = 1,
 				}, -- [4]
 				{
 					["Icons"] = {
