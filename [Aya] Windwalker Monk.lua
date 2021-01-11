@@ -14,8 +14,8 @@ TellMeWhenDB = {
 				}, -- [2]
 				["n"] = 2,
 			},
-			["ForceNoBlizzCC"] = true,
 			["Version"] = 90301,
+			["ForceNoBlizzCC"] = true,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1Rhh0xLqd4g8",
@@ -30,7 +30,7 @@ TellMeWhenDB = {
 					["Name"] = "Shown Main",
 					["TimerBar_StartColor"] = "ff000000",
 					["Locked"] = true,
-					["Columns"] = 8,
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -1507,7 +1507,7 @@ TellMeWhenDB = {
 							},
 						}, -- [120]
 					},
-					["TimerBar_MiddleColor"] = "ff000000",
+					["Columns"] = 8,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1T0KXe2TsCkW",
@@ -1522,7 +1522,7 @@ TellMeWhenDB = {
 					["Name"] = "Hidden APL",
 					["TimerBar_StartColor"] = "ff000000",
 					["Locked"] = true,
-					["Columns"] = 8,
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1T0KeNg=IDQd",
@@ -3101,14 +3101,18 @@ TellMeWhenDB = {
 							},
 						}, -- [120]
 					},
-					["TimerBar_MiddleColor"] = "ff000000",
+					["Columns"] = 8,
 				}, -- [2]
 				{
 					["GUID"] = "TMW:group:1P3cu8AAtSYM",
+					["Point"] = {
+						["y"] = -3.0517578125e-05,
+						["x"] = -0.000244140625,
+						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
+					},
 					["Name"] = "Visible APL",
-					["Columns"] = 1,
-					["Locked"] = true,
 					["Scale"] = 2.5,
+					["Locked"] = true,
 					["Conditions"] = {
 						{
 							["Name"] = "return not GetToggle(1, \"DisableRotationDisplay\")",
@@ -7313,23 +7317,17 @@ TellMeWhenDB = {
 							},
 						}, -- [380]
 					},
-					["Point"] = {
-						["y"] = -3.0517578125e-05,
-						["x"] = -0.000244140625,
-						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
-					},
+					["Columns"] = 1,
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1TMvhh5X05mC",
+					["Columns"] = 1,
 					["Point"] = {
 						["y"] = 9.896129608154297,
 						["x"] = 199.9112091064453,
 						["point"] = "BOTTOMLEFT",
 						["relativePoint"] = "BOTTOMLEFT",
 					},
-					["Name"] = "Visible APL Layout",
-					["Level"] = 11,
-					["Scale"] = 2.5,
 					["Conditions"] = {
 						{
 							["Name"] = "return not GetToggle(1, \"DisableRotationDisplay\") and not GetToggle(1, \"DisableRotationModes\")",
@@ -7337,6 +7335,8 @@ TellMeWhenDB = {
 						}, -- [1]
 						["n"] = 1,
 					},
+					["Scale"] = 2.5,
+					["Level"] = 11,
 					["Icons"] = {
 						{
 							["Enabled"] = true,
@@ -11327,7 +11327,7 @@ TellMeWhenDB = {
 							},
 						}, -- [360]
 					},
-					["Columns"] = 1,
+					["Name"] = "Visible APL Layout",
 				}, -- [4]
 				{
 					["Icons"] = {
