@@ -8,6 +8,8 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 ####  **PVE**
  -Toggle for Flying Kick\
  -PvE Ignore Karma\
+ -SEF With/without Burst
+ -Integrated with Ryan's Interrupt list
  -Sliders for Defensives (Karma, Dampen Harm, Diffuse Magic, Fort Brew, Trinkets(WIP), and Stoneform)
   
 ####  **Party Toggles**
@@ -17,8 +19,9 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
   -No Functionality yet
   
 ## **Rotation**
--Written based on SIMCRAFT roations. Only tested on sub 60 characters but currently beating sims\
--Logic fo cast/cancel Flying Serpent Kick\
+-Written based on SIMCRAFT roations. Currently meeting or beating sims\
+-Logic to cast/cancel Flying Serpent Kick\
+-Fists of Fury Clipping trick\
 -Multiple possible Rotations for Serenity or Kyrian Covenant\
 -PreCombat logic (WIP)\
 -Opener Rotation based on SIMCRAFT\
