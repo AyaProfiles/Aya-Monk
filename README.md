@@ -8,9 +8,9 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 ####  **PVE**
  -Toggle for Flying Kick\
  -PvE Ignore Karma\
- -SEF With/without Burst
- -Integrated with Ryan's Interrupt list
- -Auto target and Kill Explosives
+ -SEF With/without Burst\
+ -Integrated with Ryan's Interrupt list\
+ -Auto target and Kill Explosives\
  -Sliders for Defensives (Karma, Dampen Harm, Diffuse Magic, Fort Brew, Trinkets(WIP), and Stoneform)
   
 ####  **Party Toggles**
