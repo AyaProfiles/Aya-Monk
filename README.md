@@ -5,13 +5,17 @@ This is early development!!! Expect bugs and features not working. Please report
 ## **Profile UI**
 Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 
-####  **PVE**
+####  **WW PVE**
  -Toggle for Flying Kick\
  -PvE Ignore Karma\
  -SEF With/without Burst\
  -Integrated with Ryan's Interrupt list\
  -Auto target and Kill Explosives\
  -Sliders for Defensives (Karma, Dampen Harm, Diffuse Magic, Fort Brew, Trinkets(WIP), and Stoneform)
+ 
+####  **BM PVE**
+ -Auto target and Kill Explosives\
+ -Sliders for Defensives\
   
 ####  **Party Toggles**
   -For Heal/Dispells  on @mouseover (WIP)
@@ -19,7 +23,7 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 ####  **PvP**
   -No Functionality yet
   
-## **Rotation**
+## **WW Rotation**
 -Written based on SIMCRAFT roations. Currently meeting or beating sims\
 -Logic to cast/cancel Flying Serpent Kick\
 -Fists of Fury Clipping trick\
@@ -27,6 +31,10 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 -PreCombat logic (WIP)\
 -Opener Rotation based on SIMCRAFT\
 -PullTimer Start (WIP)
+
+## **BM Rotation**
+-DPS written based on SIMCRAFT roations\
+-Defensive rotations based on Anyi's old rotation and community suggestions for fine tuning
 
 ## **Donations accepted**
 Please only donate for Monk rotation! If you enjoy the DK rotation please donate that to Trip\
