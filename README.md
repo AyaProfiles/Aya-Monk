@@ -35,6 +35,7 @@ Mostly copy of GGL's Monk UI. PvP Buttons are in there but no functionality yet
 ## **BM Rotation**
 -DPS written based on SIMCRAFT roations\
 -Defensive rotations based on Anyi's old rotation and community suggestions for fine tuning
+-Special thanks to Dizzy and Badger for their monk expertise
 
 ## **Donations accepted**
 Please only donate for Monk rotation! If you enjoy the DK rotation please donate that to Trip\
