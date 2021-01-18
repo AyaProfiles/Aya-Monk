@@ -2,8 +2,8 @@ TellMeWhenDB = {
 	["Version"] = 90301,
 	["profiles"] = {
 		["[Aya] Monk"] = {
-			["Version"] = 90301,
 			["ForceNoBlizzCC"] = true,
+			["Version"] = 90301,
 			["NumGroups"] = 4,
 			["TextureName"] = "Flat",
 			["CodeSnippets"] = {
@@ -41,12 +41,7 @@ TellMeWhenDB = {
 			},
 			["Groups"] = {
 				{
-					["Point"] = {
-						["y"] = 12,
-						["x"] = -29,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Scale"] = 0.600000023841858,
 					["TimerBar_CompleteColor"] = "ff000000",
 					["TimerBar_StartColor"] = "ff000000",
@@ -1530,15 +1525,15 @@ TellMeWhenDB = {
 					},
 					["Name"] = "Shown Main",
 					["GUID"] = "TMW:group:1Rhh0xLqd4g8",
-					["TimerBar_MiddleColor"] = "ff000000",
-				}, -- [1]
-				{
 					["Point"] = {
-						["y"] = 50,
-						["x"] = -29.0000038146973,
+						["y"] = 12,
+						["x"] = -29,
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
+				}, -- [1]
+				{
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Scale"] = 0.600000023841858,
 					["TimerBar_CompleteColor"] = "ff000000",
 					["TimerBar_StartColor"] = "ff000000",
@@ -3124,14 +3119,14 @@ TellMeWhenDB = {
 					},
 					["Name"] = "Hidden APL",
 					["GUID"] = "TMW:group:1T0KXe2TsCkW",
-					["TimerBar_MiddleColor"] = "ff000000",
+					["Point"] = {
+						["y"] = 50,
+						["x"] = -29.0000038146973,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
 				}, -- [2]
 				{
-					["Point"] = {
-						["y"] = -3.0517578125e-05,
-						["x"] = -0.000244140625,
-						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
-					},
 					["Scale"] = 2.5,
 					["Locked"] = true,
 					["Columns"] = 1,
@@ -7341,14 +7336,13 @@ TellMeWhenDB = {
 						["n"] = 1,
 					},
 					["GUID"] = "TMW:group:1P3cu8AAtSYM",
+					["Point"] = {
+						["y"] = -3.0517578125e-05,
+						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
+						["x"] = -0.000244140625,
+					},
 				}, -- [3]
 				{
-					["Point"] = {
-						["y"] = -1.703859806060791,
-						["x"] = -173.4887759685516,
-						["point"] = "BOTTOM",
-						["relativePoint"] = "BOTTOM",
-					},
 					["Scale"] = 2.5,
 					["Level"] = 11,
 					["Columns"] = 1,
@@ -11351,6 +11345,12 @@ TellMeWhenDB = {
 						["n"] = 1,
 					},
 					["GUID"] = "TMW:group:1TMvhh5X05mC",
+					["Point"] = {
+						["y"] = -1.703859806060791,
+						["x"] = -173.4887759685516,
+						["point"] = "BOTTOM",
+						["relativePoint"] = "BOTTOM",
+					},
 				}, -- [4]
 				{
 					["Icons"] = {
