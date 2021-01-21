@@ -1,5 +1,153 @@
 TellMeWhenDB = {
+	["Version"] = 90301,
 	["global"] = {
+		["TextLayouts"] = {
+			["bar2"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+			["TMW:textlayout:1Rh4g1a9S6Uf"] = {
+				{
+					["Outline"] = "OUTLINE",
+					["Shadow"] = 0.9,
+					["Anchors"] = {
+						{
+							["y"] = 58,
+							["relativeTo"] = "IconModule_CooldownSweepCooldown",
+							["relativePoint"] = "RIGHT",
+							["x"] = 12.2,
+						}, -- [1]
+					},
+					["Name"] = "Morpheus",
+					["Rotate"] = 90,
+					["Size"] = 35,
+				}, -- [1]
+				["GUID"] = "TMW:textlayout:1Rh4g1a9S6Uf",
+				["Name"] = "UserInterface_TextVertical",
+			},
+			["TMW:textlayout:1RkGJEN4L5o_"] = {
+				{
+					["SkinAs"] = "HotKey",
+					["Anchors"] = {
+						{
+							["y"] = -2,
+							["x"] = -2,
+							["point"] = "TOPLEFT",
+							["relativePoint"] = "TOPLEFT",
+						}, -- [1]
+						{
+							["y"] = -2,
+							["x"] = -2,
+							["point"] = "TOPRIGHT",
+							["relativePoint"] = "TOPRIGHT",
+						}, -- [2]
+						["n"] = 2,
+					},
+					["StringName"] = "Привязка/Ярлык",
+					["Height"] = 1,
+				}, -- [1]
+				{
+					["SkinAs"] = "Count",
+					["Anchors"] = {
+						{
+							["y"] = 2,
+							["x"] = 50.7,
+							["point"] = "RIGHT",
+							["relativePoint"] = "RIGHT",
+						}, -- [1]
+					},
+					["StringName"] = "Стаки",
+					["DefaultText"] = "[Stacks:Hide(0)]",
+				}, -- [2]
+				["GUID"] = "TMW:textlayout:1RkGJEN4L5o_",
+				["Name"] = "UserInterface_DefaultText_RightSide",
+				["n"] = 2,
+			},
+			["icon1"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+			},
+			["TMW:textlayout:1RFt2HZe_Cbk"] = {
+				{
+					["Outline"] = "OUTLINE",
+					["Shadow"] = 0.9,
+					["Anchors"] = {
+						{
+							["point"] = "BOTTOM",
+							["relativePoint"] = "BOTTOM",
+						}, -- [1]
+					},
+					["Size"] = 8,
+				}, -- [1]
+				["GUID"] = "TMW:textlayout:1RFt2HZe_Cbk",
+				["Name"] = "UserInterface_Text",
+			},
+			["TMW:textlayout:1S6ieoFev4r0"] = {
+				{
+					["Outline"] = "OUTLINE",
+					["Shadow"] = 0.9,
+					["Anchors"] = {
+						{
+							["y"] = 2,
+							["point"] = "BOTTOM",
+							["relativePoint"] = "BOTTOM",
+						}, -- [1]
+					},
+					["Name"] = "AR ZhongkaiGBK Medium",
+					["Size"] = 6,
+				}, -- [1]
+				["GUID"] = "TMW:textlayout:1S6ieoFev4r0",
+				["Name"] = "UserInterface_SmallerText",
+			},
+			["TMW:textlayout:1TMvg5InaYOw"] = {
+				{
+					["Anchors"] = {
+						{
+							["y"] = -1.5,
+							["x"] = 1.5,
+							["point"] = "TOPLEFT",
+							["relativePoint"] = "TOPLEFT",
+						}, -- [1]
+					},
+					["DefaultText"] = "[ActionBurst]",
+					["Size"] = 6,
+				}, -- [1]
+				{
+					["Anchors"] = {
+						{
+							["y"] = 1,
+							["x"] = 0.5,
+							["point"] = "BOTTOMRIGHT",
+							["relativePoint"] = "BOTTOMRIGHT",
+						}, -- [1]
+					},
+					["Name"] = "Morpheus",
+					["DefaultText"] = "[ActionAoE]",
+					["Size"] = 6,
+				}, -- [2]
+				{
+					["Anchors"] = {
+						{
+							["y"] = 1,
+							["x"] = 1.5,
+							["point"] = "BOTTOMLEFT",
+							["relativePoint"] = "BOTTOMLEFT",
+						}, -- [1]
+					},
+					["Name"] = "Morpheus",
+					["DefaultText"] = "[ActionMode]",
+					["Size"] = 6,
+				}, -- [3]
+				["GUID"] = "TMW:textlayout:1TMvg5InaYOw",
+				["Name"] = "ActionLayout",
+				["n"] = 3,
+			},
+		},
+		["ShowGUIDs"] = true,
 		["CodeSnippets"] = {
 			{
 				["Order"] = 0.6,
@@ -37,18 +185,15166 @@ TellMeWhenDB = {
 			}, -- [7]
 			["n"] = 7,
 		},
+		["Groups"] = {
+			{
+				["GUID"] = "TMW:group:1RCgER2LDYMA",
+				["Point"] = {
+					["y"] = -52.1353299047438,
+					["x"] = -29.9,
+					["point"] = "TOPLEFT",
+					["relativePoint"] = "TOPLEFT",
+				},
+				["Scale"] = 1.40016186237335,
+				["Locked"] = true,
+				["Enabled"] = false,
+				["Columns"] = 1,
+				["Icons"] = {
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1RCgCsBLK7pm",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "local icon = ...\nicon:SetInfo(\"texture\", 397907) \n\n\n\n",
+								["Event"] = "OnEventsRestored",
+								["Frequency"] = 0,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return chat()",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [1]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [65]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [66]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [67]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [68]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [69]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [70]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [71]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [72]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [73]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [74]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [75]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [76]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [77]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [78]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [79]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [80]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [81]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [82]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [83]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [84]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [85]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [86]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [87]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [88]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [89]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [90]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [91]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [92]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [93]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [94]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [95]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [96]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [97]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [98]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [99]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [100]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [101]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [102]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [103]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [104]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [105]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [106]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [107]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [108]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [109]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [110]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [111]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [112]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [113]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [114]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [115]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [116]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [117]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [118]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [119]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [120]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [121]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [122]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [123]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [124]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [125]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [126]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [127]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [128]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [129]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [130]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [131]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [132]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [133]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [134]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [135]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [136]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [137]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [138]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [139]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [140]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [141]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [142]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [143]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [144]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [145]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [146]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [147]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [148]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [149]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [150]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [151]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [152]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [153]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [154]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [155]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [156]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [157]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [158]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [159]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [160]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [161]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [162]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [163]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [164]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [165]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [166]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [167]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [168]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [169]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [170]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [171]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [172]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [173]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [174]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [175]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [176]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [177]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [178]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [179]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [180]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [181]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [182]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [183]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [184]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [185]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [186]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [187]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [188]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [189]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [190]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [191]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [192]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [193]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [194]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [195]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [196]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [197]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [198]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [199]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [200]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [201]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [202]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [203]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [204]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [205]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [206]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [207]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [208]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [209]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [210]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [211]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [212]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [213]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [214]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [215]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [216]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [217]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [218]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [219]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [220]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [221]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [222]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [223]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [224]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [225]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [226]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [227]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [228]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [229]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [230]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [231]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [232]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [233]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [234]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [235]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [236]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [237]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [238]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [239]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [240]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [241]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [242]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [243]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [244]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [245]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [246]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [247]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [248]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [249]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [250]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [251]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [252]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [253]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [254]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [255]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [256]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [257]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [258]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [259]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [260]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [261]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [262]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [263]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [264]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [265]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [266]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [267]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [268]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [269]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [270]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [271]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [272]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [273]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [274]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [275]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [276]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [277]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [278]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [279]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [280]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [281]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [282]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [283]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [284]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [285]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [286]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [287]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [288]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [289]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [290]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [291]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [292]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [293]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [294]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [295]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [296]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [297]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [298]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [299]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [300]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [301]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [302]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [303]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [304]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [305]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [306]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [307]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [308]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [309]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [310]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [311]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [312]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [313]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [314]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [315]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [316]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [317]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [318]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [319]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [320]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [321]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [322]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [323]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [324]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [325]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [326]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [327]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [328]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [329]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [330]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [331]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [332]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [333]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [334]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [335]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [336]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [337]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [338]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [339]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [340]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [341]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [342]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [343]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [344]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [345]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [346]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [347]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [348]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [349]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [350]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [351]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [352]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [353]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [354]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [355]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [356]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [357]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [358]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [359]
+					{
+						["ShowTimerText"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [360]
+				},
+				["EnabledProfiles"] = {
+					["[GGL] Monk"] = false,
+					["[DEV] All in One"] = false,
+					["[GGL] Template"] = false,
+					["[GGL] Test"] = false,
+					["[GGL] SimTest"] = false,
+				},
+				["Name"] = "[GGL] Chat trigger",
+			}, -- [1]
+			{
+				["GUID"] = "TMW:group:1RhHG3BLwtGX",
+				["Scale"] = 1.73339736461639,
+				["Enabled"] = false,
+				["Columns"] = 1,
+				["Icons"] = {
+					{
+						["Type"] = "conditionicon",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "open_toggle = not open_toggle\n",
+								["Event"] = "OnRightClick",
+							}, -- [1]
+							{
+								["Type"] = "Lua",
+								["Lua"] = "lclick_open_toggle = not lclick_open_toggle\n\n\n\n",
+								["Event"] = "OnLeftClick",
+							}, -- [2]
+							{
+								["Type"] = "Lua",
+								["Lua"] = "SystemToggles()\nLocalToggles()\n\n\n",
+								["Event"] = "OnEventsRestored",
+							}, -- [3]
+							["n"] = 3,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Toggle\n", -- [1]
+									"Toggle", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "219159",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+				},
+				["EnabledProfiles"] = {
+					["[GGL] Monk"] = false,
+					["[GGL] Template"] = false,
+					["[GGL] Test"] = false,
+					["[GGL] SimTest"] = false,
+				},
+				["Name"] = "[GGL] Anchor TOGGLES",
+				["Point"] = {
+					["y"] = 114.226554870605,
+					["x"] = -237.106316405631,
+					["point"] = "BOTTOMRIGHT",
+					["relativePoint"] = "BOTTOMRIGHT",
+				},
+			}, -- [2]
+			{
+				["GUID"] = "TMW:group:1RVRouwrKDKz",
+				["Point"] = {
+					["y"] = 30,
+					["relativeTo"] = "TMW:group:1RhHG3BLwtGX",
+					["point"] = "BOTTOMLEFT",
+					["relativePoint"] = "BOTTOMLEFT",
+				},
+				["Scale"] = 1.7334,
+				["Rows"] = 7,
+				["Locked"] = true,
+				["Enabled"] = false,
+				["Columns"] = 1,
+				["Icons"] = {
+					{
+						["Type"] = "conditionicon",
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not BasicRotation",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "LOSCheck = not LOSCheck\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 2\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 1\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\n\n",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"LOS\nSystem", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "189208",
+						["States"] = {
+							{
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["Type"] = "conditionicon",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "LOSCheck = not LOSCheck\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 1\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 2\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\n\n",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"LOS\nSystem", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "189208",
+						["States"] = {
+							{
+								["Color"] = "ff848484d",
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not BasicRotation",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [2]
+					{
+						["Type"] = "conditionicon",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "MSG_Toggle = not MSG_Toggle\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 4\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 3\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"MSG\nSystem", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "101059",
+						["States"] = {
+							{
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not BasicRotation",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [3]
+					{
+						["Type"] = "conditionicon",
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not BasicRotation",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "MSG_Toggle = not MSG_Toggle\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 3\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 4\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"MSG\nSystem", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "101059",
+						["States"] = {
+							{
+								["Color"] = "ff848484d",
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["Type"] = "conditionicon",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "Target_Toggle = not Target_Toggle\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 6\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 5\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Auto\nTarget", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "153911",
+						["States"] = {
+							{
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["Type"] = "conditionicon",
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "Target_Toggle = not Target_Toggle\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw enable global 3 5\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)\n\nDEFAULT_CHAT_FRAME.editBox:SetText(\"/tmw disable global 3 6\")\nChatEdit_SendText(DEFAULT_CHAT_FRAME.editBox,0)",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Auto\nTarget", -- [1]
+									"Mouse_HEAL", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "153911",
+						["States"] = {
+							{
+								["Color"] = "ff848484d",
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["Type"] = "conditionicon",
+						["Enabled"] = true,
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "TMW.CNDT.Env.InPvP_Toggle = true\nTMW.CNDT.Env.InPvP_Status = not TMW.CNDT.Env.InPvP_Status\n\n",
+								["OnlyShown"] = true,
+								["Event"] = "OnLeftClick",
+								["PassThrough"] = false,
+							}, -- [1]
+							{
+								["Type"] = "Lua",
+								["Lua"] = "-- Reset\nTMW.CNDT.Env.InPvP_Toggle = false\nTMW.CNDT.Env.InPvP_Status = TMW.CNDT.Env.CheckInPvP()\n\n\n",
+								["OnlyShown"] = true,
+								["Event"] = "OnRightClick",
+								["PassThrough"] = false,
+							}, -- [2]
+							["n"] = 2,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"PvP / PvE\nRClick Reset", -- [1]
+									"[Stacks:Hide(0)]", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "269083",
+						["States"] = {
+							{
+							}, -- [1]
+							{
+								["Color"] = "ff848484d",
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return InPvP_Status",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+				},
+				["SortPriorities"] = {
+					{
+						["Method"] = "shown",
+						["Order"] = -1,
+					}, -- [1]
+					{
+						["Method"] = "id",
+						["Order"] = 1,
+					}, -- [2]
+				},
+				["LayoutDirection"] = 8,
+				["EnabledProfiles"] = {
+					["[GGL] Monk"] = false,
+					["[GGL] Template"] = false,
+					["[GGL] Test"] = false,
+					["[GGL] SimTest"] = false,
+				},
+				["Name"] = "[GGL] System TOGGLES",
+				["Conditions"] = {
+					{
+						["Type"] = "LUA",
+						["Name"] = "return lclick_open_toggle",
+					}, -- [1]
+					["n"] = 1,
+				},
+				["ShrinkGroup"] = true,
+			}, -- [3]
+			{
+				["GUID"] = "TMW:group:1RhKveUIDx_I",
+				["Scale"] = 0.725002586841583,
+				["Rows"] = 7,
+				["Locked"] = true,
+				["Enabled"] = false,
+				["Columns"] = 8,
+				["Icons"] = {
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1Rhgs3oNK7HV",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"PvP", -- [1]
+								},
+							},
+						},
+						["CustomTex"] = "272950",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return InPvP()",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [1]
+					{
+						["Type"] = "conditionicon",
+						["Name"] = "32612; 96243; 175833; 66; 110959; 198158",
+						["GUID"] = "TMW:icon:1RhikUwvZbG9",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Global \nInvisible", -- [1]
+									"", -- [2]
+								},
+							},
+						},
+						["CustomTex"] = "32612",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return global_invisible()",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Enabled"] = true,
+					}, -- [2]
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1Ri_L6d1VQu7",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"ShouldStop", -- [1]
+								},
+							},
+						},
+						["CustomTex"] = "97263",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return \n(\n    not ShouldStop() or\n    (       \n        IsGGLprofile and\n        select(2, UnitClass(\"player\")) == \"DEATHKNIGHT\" and\n        oDK[\"TargetInMelee\"] and\n        -- Wrath Walk\n        select(2, CastTime(212552)) > 0\n    ) or\n    (\n        -- Shadow Priest\n        UNITSpec(\"player\", 258) and\n        (\n            -- Mind Flay\n            select(2, CastTime(15407)) > 0 or\n            -- Mind Shear \n            select(2, CastTime(48045)) > 0 \n        ) \n    )\n)",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1Rk9KtRVbSzD",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "153911",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- AutoTarget\nreturn \nTarget_Toggle and\nnot IamHealer and\nCombatTime(\"player\") > 0 and\n(    \n    not UnitExists(\"target\") or\n    (\n        Zone ~= \"none\" and\n        not InPvP() and\n        CombatTime(\"target\") == 0 \n    )\n) and\n(\n    (\n        not InPvP() and\n        CombatUnits(1) \n    ) or\n    Zone == \"pvp\"\n)",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1Rhh3CH_ujtP",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "34976",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "NAME",
+								["Unit"] = "mouseover",
+								["Name"] = "Флаг Альянса; Флаг Орды: Флаг Пустоверти; Alliance Flag; Horde Flag; Netherstorm Flag",
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not UNITEnemy(\"mouseover\")",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [28]
+					{
+						["CLEUEvents"] = {
+							["SPELL_CAST_SUCCESS"] = true,
+							["SPELL_CAST_START"] = true,
+						},
+						["Type"] = "cleu",
+						["CLEUDur"] = 0.5,
+						["Name"] = "147362; 96231; 6552; 47528; 57994",
+						["SourceUnit"] = "arena1; arena2; arena3; target",
+						["GUID"] = "TMW:icon:1PH8MuGUll4D",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "spell_magic_polymorphrabbit.tga",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "BUFFDUR",
+								["Checked"] = true,
+								["Name"] = "642",
+							}, -- [1]
+							{
+								["Type"] = "CASTING",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["Type"] = "conditionicon",
+						["Icons"] = {
+							"TMW:icon:1M1UxqK_Do5g", -- [1]
+						},
+						["GUID"] = "TMW:icon:1OxuA9gGM14S",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "98008",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "REACT",
+								["Unit"] = "mouseover",
+								["Level"] = 1,
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "return not PvP.Unit(\"target\"):IsTotem() and PvP.Unit(\"mouseover\"):IsTotem()",
+							}, -- [2]
+							{
+								["Type"] = "NAME",
+								["Unit"] = "mouseover",
+								["Name"] = "Spirit Link Totem; Healing Tide Totem; Counterstrike Totem",
+							}, -- [3]
+							["n"] = 3,
+						},
+					}, -- [36]
+					{
+						["Sort"] = 1,
+						["Type"] = "meta",
+						["Icons"] = {
+							"TMW:icon:1Rhgs3oFr4Hu", -- [1]
+							"TMW:icon:1Rhgs3oIMZVD", -- [2]
+							"TMW:icon:1Rhgs3oKqXzt", -- [3]
+						},
+						["ShowTimerText"] = true,
+						["GUID"] = "TMW:icon:1Rhh3CIh0Y9Z",
+						["Enabled"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "EXISTS",
+								["Unit"] = "target",
+								["Level"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [37]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 4,
+						["GUID"] = "TMW:icon:1Rhgs3oFr4Hu",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "111771",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "target",
+								["Name"] = "arena1",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [38]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 4,
+						["GUID"] = "TMW:icon:1Rhgs3oIMZVD",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "45993",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "target",
+								["Name"] = "arena2",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [39]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 4,
+						["GUID"] = "TMW:icon:1Rhgs3oKqXzt",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "107141",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "target",
+								["Name"] = "arena3",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["Type"] = "item",
+						["Name"] = "5512",
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Level"] = 1,
+								["Icon"] = "TMW:icon:1RhikUwvZbG9",
+							}, -- [1]
+							{
+								["Type"] = "MOUNTED",
+								["Level"] = 1,
+							}, -- [2]
+							{
+								["Type"] = "COMBAT",
+							}, -- [3]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "5512",
+								["Level"] = 1,
+							}, -- [4]
+							{
+								["Type"] = "HEALTH",
+								["Operator"] = "<=",
+								["Level"] = 20,
+							}, -- [5]
+							["n"] = 5,
+						},
+						["GUID"] = "TMW:icon:1Rhh3CILU996",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "6262",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyInBags"] = true,
+						["Enabled"] = true,
+					}, -- [44]
+					{
+						["Sort"] = 1,
+						["Type"] = "meta",
+						["Icons"] = {
+							"TMW:icon:1Rhgs3oZwrgC", -- [1]
+							"TMW:icon:1Rhgs3ocU7BO", -- [2]
+							"TMW:icon:1Rhgs3ogb1qq", -- [3]
+						},
+						["ShowTimerText"] = true,
+						["GUID"] = "TMW:icon:1Rhh3CJKO5iI",
+						["Enabled"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "EXISTS",
+								["Unit"] = "focus",
+								["Level"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [45]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 20,
+						["GUID"] = "TMW:icon:1Rhgs3oZwrgC",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "111",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "focus",
+								["Name"] = "arena1",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [46]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 20,
+						["GUID"] = "TMW:icon:1Rhgs3ocU7BO",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "22200",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "focus",
+								["Name"] = "arena2",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [47]
+					{
+						["Type"] = "conditionicon",
+						["UnConditionDur"] = 20,
+						["GUID"] = "TMW:icon:1Rhgs3ogb1qq",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["UnConditionDurEnabled"] = true,
+						["CustomTex"] = "40875",
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["OnlyIfCounting"] = true,
+						["Enabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "focus",
+								["Name"] = "arena3",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [48]
+					{
+						["LoseControlTypes"] = {
+							["CYCLONE"] = true,
+							["POSSESS"] = true,
+							["POLYMORPH"] = true,
+							["FREEZE"] = true,
+							["SILENCE"] = true,
+							["INCAPACITATE"] = true,
+							["SCHOOL_INTERRUPT"] = 127,
+							["SHACKLE_UNDEAD"] = true,
+							["STUN"] = true,
+							["DISARM"] = true,
+							["SLEEP"] = true,
+							["ROOT"] = true,
+							["FEAR"] = true,
+							["DISORIENT"] = true,
+							["BANISH"] = true,
+							["SAP"] = true,
+							["PACIFYSILENCE"] = true,
+							["CHARM"] = true,
+							["HORROR"] = true,
+						},
+						["BuffOrDebuff"] = "HARMFUL",
+						["Type"] = "conditionicon",
+						["Name"] = "CrowdControl; Silenced; Stunned; Shatterable; Disoriented; Feared; Incapacitated; Rooted",
+						["GUID"] = "TMW:icon:1Rhh3CGegmj6",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "208683",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["Checked"] = true,
+								["BitFlags"] = 32,
+								["PrtsBefore"] = 1,
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["PrtsAfter"] = 1,
+								["Name"] = "return BasicRotation",
+								["AndOr"] = "OR",
+							}, -- [2]
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- PvP Trinket\nreturn \nLastPlayerCastID ~= SpellRace(\"TRINKET\") and\nGladiatorMedallion()",
+							}, -- [3]
+							["n"] = 3,
+						},
+						["Enabled"] = true,
+					}, -- [49]
+					{
+						["BuffOrDebuff"] = "HARMFUL",
+						["Type"] = "conditionicon",
+						["Name"] = "59752",
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Trinket Racials\nreturn \nLastPlayerCastID ~= 208683 and -- Gladiator Medallion\nSpellRace(\"TRINKET\")",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["GUID"] = "TMW:icon:1Rhgrx8VBehR",
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "local TMW = TMW\nlocal CNDT = TMW.CNDT\nlocal Env = CNDT.Env\nlocal id = Env.SpellRace(\"TRINKET\")\nlocal icon = ...\nicon:SetInfo(\"texture\", TMW.GetSpellTexture(id))",
+								["OnlyShown"] = true,
+								["Event"] = "WCSP",
+								["Frequency"] = 0.1,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Enabled"] = true,
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["Type"] = "meta",
+						["Icons"] = {
+							"TMW:icon:1RhjpSXX6h_u", -- [1]
+							"TMW:icon:1RhjpWnLooNm", -- [2]
+							"TMW:icon:1Rhjpb8wakbE", -- [3]
+							"TMW:icon:1Rhjpen1Qwun", -- [4]
+						},
+						["GUID"] = "TMW:icon:1RhjpNmE6Luk",
+						["Enabled"] = true,
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return \nBasicRotation and\nnot IsMounted() and\nCombatTime(\"player\") > 0 and\n(\n    PvPBuffs(\"player\", \"DamageBuffs\") > 0 or\n    PvPBuffs(\"player\", \"BurstHaste\") > 0\n)",
+							}, -- [1]
+							{
+								["Type"] = "LIBRANGECHECK",
+								["Unit"] = "target",
+								["Operator"] = "<=",
+								["PrtsBefore"] = 1,
+								["Level"] = 7,
+							}, -- [2]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[105] = true,
+									[63] = true,
+									[262] = true,
+									[256] = true,
+									[65] = true,
+									[265] = true,
+									[266] = true,
+									[267] = true,
+									[62] = true,
+									[64] = true,
+									[270] = true,
+									[102] = true,
+									[257] = true,
+									[258] = true,
+									[254] = true,
+									[253] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [3]
+							{
+								["Type"] = "LIBRANGECHECK",
+								["PrtsAfter"] = 2,
+								["Unit"] = "target",
+								["Operator"] = "<=",
+								["Level"] = 40,
+							}, -- [4]
+							["n"] = 4,
+						},
+					}, -- [52]
+					{
+						["OnlyEquipped"] = true,
+						["Type"] = "conditionicon",
+						["OnlyInBags"] = true,
+						["GUID"] = "TMW:icon:1RhjpSXX6h_u",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "179071",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Basic Slot 13\nreturn \nBasicRotation and\nUseItem(13)",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [53]
+					{
+						["OnlyEquipped"] = true,
+						["Type"] = "conditionicon",
+						["OnlyInBags"] = true,
+						["GUID"] = "TMW:icon:1RhjpWnLooNm",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "224540",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Basic Slot 14\nreturn \nBasicRotation and\nUseItem(14)",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [54]
+					{
+						["Type"] = "conditionicon",
+						["OnlyInBags"] = true,
+						["GUID"] = "TMW:icon:1Rhjpb8wakbE",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["CustomTex"] = "156426",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Level"] = 1,
+								["Icon"] = "TMW:icon:1Rhgs3oNK7HV",
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Basic Potion\nreturn \nBasicRotation and\nPvPBuffs(\"player\", \"BurstHaste\") > 0 and\n(\n    UNITLevel(\"target\") == -1 or\n    UnitIsPlayer(\"target\")\n)",
+							}, -- [2]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[63] = true,
+									[262] = true,
+									[264] = true,
+									[265] = true,
+									[266] = true,
+									[267] = true,
+									[62] = true,
+									[64] = true,
+									[270] = true,
+									[256] = true,
+									[257] = true,
+									[65] = true,
+									[105] = true,
+								},
+								["PrtsBefore"] = 2,
+							}, -- [3]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "163222",
+								["Level"] = 1,
+							}, -- [4]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 1,
+								["Name"] = "163222",
+							}, -- [5]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[252] = true,
+									[251] = true,
+									[250] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [6]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "163224",
+								["Level"] = 1,
+							}, -- [7]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 1,
+								["Name"] = "163224",
+							}, -- [8]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[260] = true,
+									[261] = true,
+									[263] = true,
+									[253] = true,
+									[577] = true,
+									[268] = true,
+									[255] = true,
+									[254] = true,
+									[259] = true,
+									[103] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [9]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "163223",
+								["Level"] = 1,
+							}, -- [10]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 1,
+								["Name"] = "163223",
+							}, -- [11]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[269] = true,
+									[66] = true,
+									[70] = true,
+									[72] = true,
+									[71] = true,
+									[104] = true,
+									[73] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [12]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "152560",
+								["Level"] = 1,
+							}, -- [13]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 1,
+								["Name"] = "152560",
+							}, -- [14]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[581] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [15]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "152557",
+								["Level"] = 1,
+							}, -- [16]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 1,
+								["Name"] = "152557",
+							}, -- [17]
+							{
+								["Type"] = "UNITSPEC",
+								["BitFlags"] = {
+									[102] = true,
+									[258] = true,
+								},
+								["PrtsBefore"] = 1,
+								["AndOr"] = "OR",
+							}, -- [18]
+							{
+								["Type"] = "ITEMINBAGS",
+								["Operator"] = ">=",
+								["Name"] = "152559",
+								["Level"] = 1,
+							}, -- [19]
+							{
+								["Type"] = "ITEMCD",
+								["PrtsAfter"] = 2,
+								["Name"] = "152559",
+							}, -- [20]
+							["n"] = 20,
+						},
+					}, -- [55]
+					{
+						["BuffOrDebuff"] = "HARMFUL",
+						["Type"] = "conditionicon",
+						["Name"] = "59752",
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- BASIC DAMAGE Racials\nreturn \nBasicRotation and \nSpellRace(\"DAMAGE\")",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["GUID"] = "TMW:icon:1Rhjpen1Qwun",
+						["Events"] = {
+							{
+								["Type"] = "Lua",
+								["Lua"] = "local TMW = TMW\nlocal CNDT = TMW.CNDT\nlocal Env = CNDT.Env\nlocal icon = ...\nicon:SetInfo(\"texture\", TMW.GetSpellTexture(Env.SpellRace(\"DAMAGE\")))",
+								["OnlyShown"] = true,
+								["Event"] = "WCSP",
+								["PassThrough"] = false,
+								["Frequency"] = 0.1,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["SettingsPerView"] = {
+							["icon"] = {
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Enabled"] = true,
+					}, -- [56]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [65]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [66]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [67]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [68]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [69]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [70]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [71]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [72]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [73]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [74]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [75]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [76]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [77]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [78]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [79]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [80]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [81]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [82]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [83]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [84]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [85]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [86]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [87]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [88]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [89]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [90]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [91]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [92]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [93]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [94]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [95]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [96]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [97]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [98]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [99]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [100]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [101]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [102]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [103]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [104]
+				},
+				["EnabledProfiles"] = {
+					["[GGL] Template"] = false,
+					["[GGL] Monk"] = false,
+					["[GGL] SimTest"] = false,
+				},
+				["Name"] = "[GGL] Basic features",
+				["Point"] = {
+					["y"] = -8.27309977087656,
+					["x"] = 893.789245605469,
+					["point"] = "TOPLEFT",
+					["relativePoint"] = "TOPLEFT",
+				},
+			}, -- [4]
+			{
+				["GUID"] = "TMW:group:1S0n1HVc4sYp",
+				["Point"] = {
+					["y"] = -26.9633894540324,
+					["x"] = 775.356628417969,
+					["point"] = "TOPLEFT",
+					["relativePoint"] = "TOPLEFT",
+				},
+				["Scale"] = 1.0819,
+				["Rows"] = 4,
+				["Role"] = 2,
+				["Locked"] = true,
+				["Enabled"] = false,
+				["Columns"] = 5,
+				["Icons"] = {
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "unitcooldown",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							{
+								["Type"] = "ALIVE",
+							}, -- [2]
+							["n"] = 2,
+						},
+						["Name"] = "187650: 30",
+						["GUID"] = "TMW:icon:1S0n1bXaEN_8",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"   Ready", -- [1]
+									"", -- [2]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Enabled"] = true,
+					}, -- [1]
+					{
+						["Unit"] = "arena1-3",
+						["DurationMin"] = 28,
+						["Type"] = "unitcooldown",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Name"] = "187650: 30",
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1HVgfB8b",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["GUID"] = "TMW:icon:1S0n1HVlc54v",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"  Used", -- [1]
+									"", -- [2]
+								},
+							},
+						},
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["DurationMinEnabled"] = true,
+						["Enabled"] = true,
+					}, -- [2]
+					{
+						["Unit"] = "arena1-3",
+						["CLEUEvents"] = {
+							["SPELL_CREATE"] = true,
+						},
+						["SourceConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["DurationMin"] = 28,
+						["Type"] = "cleu",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["CLEUDur"] = 30,
+						["Name"] = "187650: 30",
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1HVgfB8b",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["OnlySeen"] = "class",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"  Created", -- [1]
+									"", -- [2]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["GUID"] = "TMW:icon:1S0oHilBdwVP",
+						["DurationMinEnabled"] = true,
+						["SourceUnit"] = "arena1-3",
+						["Enabled"] = true,
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "unitcondition",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							{
+								["Type"] = "ALIVE",
+							}, -- [2]
+							["n"] = 2,
+						},
+						["GUID"] = "TMW:icon:1S0n1HVgfB8b",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"   NO TRAP\nDEBUFF", -- [1]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Trap is not appear\nreturn FriendlyTeam():GetDeBuffs(187650) == 0",
+							}, -- [1]
+							["n"] = 1,
+						},
+					}, -- [5]
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1S0oHTCM_b7y",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Used", -- [1]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1HVlc54v",
+							}, -- [1]
+							{
+								["Type"] = "ICON",
+								["AndOr"] = "OR",
+								["Icon"] = "TMW:icon:1S0oHilBdwVP",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [6]
+					{
+						["CLEUEvents"] = {
+							["SPELL_CAST_SUCCESS"] = true,
+						},
+						["SourceConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 4,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Type"] = "cleu",
+						["CLEUDur"] = 2,
+						["Name"] = "190925",
+						["DestUnit"] = "player",
+						["SourceUnit"] = "arena1-3",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									[2] = "",
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["GUID"] = "TMW:icon:1S0n1gQRow3c",
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1bXaEN_8",
+							}, -- [1]
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1HVgfB8b",
+							}, -- [2]
+							["n"] = 2,
+						},
+						["Enabled"] = true,
+					}, -- [7]
+					{
+						["Unit"] = "arena1-3",
+						["CLEUEvents"] = {
+							["SPELL_CAST_SUCCESS"] = true,
+						},
+						["SourceConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 1,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["DurationMin"] = 28,
+						["Type"] = "unitcooldown",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 1,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["CLEUDur"] = 2,
+						["Name"] = "107570: 30",
+						["FakeHidden"] = true,
+						["SourceUnit"] = "arena1-3",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"", -- [1]
+									"[Stacks:Hide(0)]", -- [2]
+								},
+							},
+						},
+						["States"] = {
+							{
+								["Alpha"] = 0,
+							}, -- [1]
+							{
+								["Alpha"] = 1,
+							}, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["DestUnit"] = "player",
+						["Enabled"] = true,
+						["GUID"] = "TMW:icon:1S0n1gQMwApf",
+						["DurationMinEnabled"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1bXaEN_8",
+							}, -- [1]
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1HVgfB8b",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [8]
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "unitcooldown",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 8,
+							}, -- [1]
+							{
+								["Type"] = "UNITISUNIT",
+								["Unit"] = "unittarget",
+								["Name"] = "player",
+								["Level"] = 1,
+							}, -- [2]
+							["n"] = 2,
+						},
+						["Name"] = "2094: 2:00",
+						["Conditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Some one in kidney\nreturn FriendlyTeam():GetDeBuffs(408) > 0",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["GUID"] = "TMW:icon:1S0nG30y7Kw4",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									[2] = "[Stacks:Hide(0)]",
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Enabled"] = true,
+					}, -- [9]
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "cast",
+						["UnitConditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "return Unit(thisunit):GetRange() <= 30",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Name"] = "5782; 118; 51514; 20066; 19386",
+						["GUID"] = "TMW:icon:1S0nG59aRU2U",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+							},
+						},
+						["CustomTex"] = "118",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["Checked"] = true,
+								["BitFlags"] = 1024,
+							}, -- [1]
+							["n"] = 1,
+						},
+						["Enabled"] = true,
+					}, -- [10]
+					{
+						["Type"] = "conditionicon",
+						["GUID"] = "TMW:icon:1S0n1gQUDw4M",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"Rooted", -- [1]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1bXaEN_8",
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "return PvPDeBuffs(\"player\", \"Rooted\") > 0",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [11]
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "unitcondition",
+						["UnitConditions"] = {
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- Make taunt while some one running to us\nreturn \nUNITMoving(thisunit, \"in\") and\nUnit(thisunit):GetRange() <= 8",
+							}, -- [1]
+							["n"] = 1,
+						},
+						["GUID"] = "TMW:icon:1S0_H=EB=uiW",
+						["Enabled"] = true,
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+								["Texts"] = {
+									"  TrapRun", -- [1]
+								},
+							},
+						},
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Conditions"] = {
+							{
+								["Type"] = "ICON",
+								["Icon"] = "TMW:icon:1S0n1bXaEN_8",
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "-- 8.5.6 thisunit hotfix\nreturn TELLMEWHEN_VERSIONNUMBER >= 85602 and not Unit(\"player\"):IsFocused()",
+							}, -- [2]
+							["n"] = 2,
+						},
+					}, -- [12]
+					{
+						["Unit"] = "arena1-3",
+						["Type"] = "cast",
+						["UnitConditions"] = {
+							{
+								["Type"] = "CLASS2",
+								["BitFlags"] = 128,
+							}, -- [1]
+							{
+								["Type"] = "LUA",
+								["Name"] = "return Unit(thisunit):GetRange() <= 30",
+							}, -- [2]
+							["n"] = 2,
+						},
+						["Name"] = "113724",
+						["GUID"] = "TMW:icon:1S0_oy7Zo1Ia",
+						["SettingsPerView"] = {
+							["icon"] = {
+								["TextLayout"] = "TMW:textlayout:1RFt2HZe_Cbk",
+							},
+						},
+						["CustomTex"] = "113724",
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+						["FakeHidden"] = true,
+						["Enabled"] = true,
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [65]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [66]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [67]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [68]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [69]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [70]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [71]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [72]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [73]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [74]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [75]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [76]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [77]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [78]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [79]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [80]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [81]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [82]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [83]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [84]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [85]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [86]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [87]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [88]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [89]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [90]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [91]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [92]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [93]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [94]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [95]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [96]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [97]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [98]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [99]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [100]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [101]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [102]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [103]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [104]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [105]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [106]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [107]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [108]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [109]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [110]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [111]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [112]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [113]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [114]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [115]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [116]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [117]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [118]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [119]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [120]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [121]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [122]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [123]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [124]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [125]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [126]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [127]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [128]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [129]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [130]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [131]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [132]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [133]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [134]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [135]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [136]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [137]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [138]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [139]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [140]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [141]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [142]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [143]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [144]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [145]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [146]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [147]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [148]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [149]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [150]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [151]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [152]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [153]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [154]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [155]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [156]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [157]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [158]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [159]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [160]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [161]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [162]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [163]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [164]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [165]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [166]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [167]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [168]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [169]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [170]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [171]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [172]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [173]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [174]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [175]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [176]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [177]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [178]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [179]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [180]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [181]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [182]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [183]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [184]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [185]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [186]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [187]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [188]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [189]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [190]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [191]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [192]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [193]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [194]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [195]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [196]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [197]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [198]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [199]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [200]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [201]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [202]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [203]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [204]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [205]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [206]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [207]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [208]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [209]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [210]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [211]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [212]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [213]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [214]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [215]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [216]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [217]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [218]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [219]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [220]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [221]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [222]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [223]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [224]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [225]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [226]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [227]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [228]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [229]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [230]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [231]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [232]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [233]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [234]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [235]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [236]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [237]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [238]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [239]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [240]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [241]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [242]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [243]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [244]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [245]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [246]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [247]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [248]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [249]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [250]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [251]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [252]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [253]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [254]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [255]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [256]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [257]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [258]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [259]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [260]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [261]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [262]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [263]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [264]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [265]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [266]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [267]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [268]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [269]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [270]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [271]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [272]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [273]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [274]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [275]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [276]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [277]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [278]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [279]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [280]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [281]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [282]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [283]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [284]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [285]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [286]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [287]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [288]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [289]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [290]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [291]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [292]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [293]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [294]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [295]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [296]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [297]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [298]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [299]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [300]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [301]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [302]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [303]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [304]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [305]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [306]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [307]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [308]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [309]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [310]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [311]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [312]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [313]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [314]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [315]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [316]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [317]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [318]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [319]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [320]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [321]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [322]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [323]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [324]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [325]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [326]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [327]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [328]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [329]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [330]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [331]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [332]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [333]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [334]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [335]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [336]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [337]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [338]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [339]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [340]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [341]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [342]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [343]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [344]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [345]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [346]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [347]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [348]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [349]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [350]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [351]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [352]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [353]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [354]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [355]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [356]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [357]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [358]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [359]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [360]
+				},
+				["EnabledProfiles"] = {
+					["[GGL] Monk"] = false,
+					["[GGL] Test"] = false,
+					["[GGL] Template"] = false,
+					["[GGL] Priest"] = false,
+					["[DEV] All in One"] = false,
+					["[GGL] Demon Hunter"] = false,
+				},
+				["Name"] = "[GGL] Hidden PvP Healer's Taunt",
+				["Conditions"] = {
+					{
+						["Type"] = "CLASS2",
+						["BitFlags"] = 1538,
+					}, -- [1]
+					{
+						["Type"] = "LUA",
+						["Name"] = "return\nZone == \"arena\" and\nIamHealer",
+					}, -- [2]
+					["n"] = 2,
+				},
+			}, -- [5]
+			{
+				["Icons"] = {
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+				},
+			}, -- [6]
+			{
+				["Icons"] = {
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [57]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [58]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [59]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [60]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [61]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [62]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [63]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [64]
+				},
+			}, -- [7]
+			{
+				["Icons"] = {
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+				},
+			}, -- [8]
+			{
+				["Icons"] = {
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [21]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [22]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [23]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [24]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [25]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [26]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [27]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [28]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [29]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [30]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [31]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [32]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [33]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [34]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [35]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [36]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [37]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [38]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [39]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [40]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [41]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [42]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [43]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [44]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [45]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [46]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [47]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [48]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [49]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [50]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [51]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [52]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [53]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [54]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [55]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [56]
+				},
+			}, -- [9]
+			{
+				["Icons"] = {
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [1]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [2]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [3]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [4]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [5]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [6]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [7]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [8]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [9]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [10]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [11]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [12]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [13]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [14]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [15]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [16]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [17]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [18]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [19]
+					{
+						["States"] = {
+							{
+							}, -- [1]
+							nil, -- [2]
+							{
+							}, -- [3]
+							{
+							}, -- [4]
+						},
+					}, -- [20]
+				},
+			}, -- [10]
+		},
+		["HelpSettings"] = {
+			["CNDT_ANDOR_FIRSTSEE"] = true,
+			["SUG_FIRSTHELP"] = true,
+			["SCROLLBAR_DROPDOWN"] = true,
+			["ICON_DURS_FIRSTSEE"] = true,
+			["ICON_POCKETWATCH_FIRSTSEE"] = true,
+			["CNDT_PARENTHESES_FIRSTSEE"] = true,
+			["ICON_EXPORT_DOCOPY"] = true,
+		},
 	},
-	["Version"] = 90301,
 	["profiles"] = {
 		["[Aya] Monk"] = {
+			["ForceNoBlizzCC"] = true,
 			["Groups"] = {
 				{
-					["Point"] = {
-						["y"] = 12,
-						["x"] = -29,
-						["point"] = "TOPLEFT",
-						["relativePoint"] = "TOPLEFT",
-					},
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Scale"] = 0.600000023841858,
 					["TimerBar_CompleteColor"] = "ff000000",
 					["TimerBar_StartColor"] = "ff000000",
@@ -1532,15 +16828,15 @@ TellMeWhenDB = {
 					},
 					["Name"] = "Shown Main",
 					["GUID"] = "TMW:group:1Rhh0xLqd4g8",
-					["TimerBar_MiddleColor"] = "ff000000",
-				}, -- [1]
-				{
 					["Point"] = {
-						["y"] = 50,
-						["x"] = -29.0000038146973,
+						["y"] = 12,
+						["x"] = -29,
 						["point"] = "TOPLEFT",
 						["relativePoint"] = "TOPLEFT",
 					},
+				}, -- [1]
+				{
+					["TimerBar_MiddleColor"] = "ff000000",
 					["Scale"] = 0.600000023841858,
 					["TimerBar_CompleteColor"] = "ff000000",
 					["TimerBar_StartColor"] = "ff000000",
@@ -3126,14 +18422,14 @@ TellMeWhenDB = {
 					},
 					["Name"] = "Hidden APL",
 					["GUID"] = "TMW:group:1T0KXe2TsCkW",
-					["TimerBar_MiddleColor"] = "ff000000",
+					["Point"] = {
+						["y"] = 50,
+						["x"] = -29.0000038146973,
+						["point"] = "TOPLEFT",
+						["relativePoint"] = "TOPLEFT",
+					},
 				}, -- [2]
 				{
-					["Point"] = {
-						["y"] = -3.0517578125e-05,
-						["x"] = -0.000244140625,
-						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
-					},
 					["Scale"] = 2.5,
 					["Locked"] = true,
 					["Columns"] = 1,
@@ -7343,6 +22639,11 @@ TellMeWhenDB = {
 						["n"] = 1,
 					},
 					["GUID"] = "TMW:group:1P3cu8AAtSYM",
+					["Point"] = {
+						["y"] = -3.0517578125e-05,
+						["relativeTo"] = "TMW:group:1TMvhh5X05mC",
+						["x"] = -0.000244140625,
+					},
 				}, -- [3]
 				{
 					["Point"] = {
@@ -24993,7 +40294,6 @@ TellMeWhenDB = {
 					},
 				}, -- [20]
 			},
-			["Version"] = 90301,
 			["NumGroups"] = 4,
 			["TextureName"] = "Flat",
 			["CodeSnippets"] = {
@@ -25004,7 +40304,7 @@ TellMeWhenDB = {
 				{
 					["Order"] = 2,
 					["Name"] = "WW",
-					["Code"] = "--######################################\n--####### AYA'S WINDWALKER MONK ########\n--######################################\n\nlocal _G, setmetatable                           = _G, setmetatable\nlocal ACTION                                    = _G.Action\nlocal Covenant                                    = _G.LibStub(\"Covenant\")\nlocal TMW                                     = _G.TMW \nlocal Action                                 = _G.Action\nlocal CONST                                 = Action.Const\nlocal Listener                                 = Action.Listener\nlocal Create                                 = Action.Create\nlocal GetToggle                                = Action.GetToggle\nlocal SetToggle                                = Action.SetToggle\nlocal GetLatency                            = Action.GetLatency\nlocal GetGCD                                = Action.GetGCD\nlocal GetCurrentGCD                            = Action.GetCurrentGCD\nlocal ShouldStop                            = Action.ShouldStop\nlocal BurstIsON                                = Action.BurstIsON\nlocal AuraIsValid                            = Action.AuraIsValid\nlocal InterruptIsValid                        = Action.InterruptIsValid\nlocal FrameHasSpell                            = Action.FrameHasSpell\nlocal DetermineUsableObject                    = Action.DetermineUsableObject\n\nlocal Utils                                    = Action.Utils\nlocal BossMods                                = Action.BossMods\nlocal TeamCache                                = Action.TeamCache\nlocal EnemyTeam                                = Action.EnemyTeam\nlocal FriendlyTeam                            = Action.FriendlyTeam\nlocal LoC                                     = Action.LossOfControl\nlocal Player                                = Action.Player \nlocal MultiUnits                            = Action.MultiUnits\nlocal UnitCooldown                            = Action.UnitCooldown\nlocal Unit                                    = Action.Unit \nlocal IsUnitEnemy                            = Action.IsUnitEnemy\nlocal IsUnitFriendly                        = Action.IsUnitFriendly\nlocal ActiveUnitPlates                          = MultiUnits:GetActiveUnitPlates()\nlocal IsIndoors, UnitIsUnit, UnitIsPlayer       = IsIndoors, UnitIsUnit, UnitIsPlayer\nlocal pairs                                     = pairs\nlocal GrappleWeaponIsReady                    = Action.GrappleWeaponIsReady\n\nlocal Azerite                                 = LibStub(\"AzeriteTraits\")\n\nlocal ACTION_CONST_MONK_WINDWALKER            = CONST.MONK_WINDWALKER\nlocal ACTION_CONST_AUTOTARGET                = CONST.AUTOTARGET\nlocal ACTION_CONST_SPELLID_FREEZING_TRAP    = CONST.SPELLID_FREEZING_TRAP\n\n--For Toaster\nlocal Toaster                                    = _G.Toaster\nlocal GetSpellTexture                             = _G.TMW.GetSpellTexture\n\n--- ============================ CONTENT ===========================\n--- ======= APL LOCALS =======\n-- luacheck: max_line_length 9999\n\nAction[ACTION_CONST_MONK_WINDWALKER] = {\n    -- Racial\n    ArcaneTorrent                    = Action.Create({ Type = \"Spell\", ID = 50613    }),\n    BloodFury                        = Action.Create({ Type = \"Spell\", ID = 20572    }),\n    Fireblood                        = Action.Create({ Type = \"Spell\", ID = 265221   }),\n    AncestralCall                    = Action.Create({ Type = \"Spell\", ID = 274738   }),\n    Berserking                        = Action.Create({ Type = \"Spell\", ID = 26297    }),\n    ArcanePulse                        = Action.Create({ Type = \"Spell\", ID = 260364   }),\n    QuakingPalm                        = Action.Create({ Type = \"Spell\", ID = 107079   }),\n    Haymaker                        = Action.Create({ Type = \"Spell\", ID = 287712   }), \n    WarStomp                        = Action.Create({ Type = \"Spell\", ID = 20549    }),\n    BullRush                        = Action.Create({ Type = \"Spell\", ID = 255654   }),  \n    GiftofNaaru                        = Action.Create({ Type = \"Spell\", ID = 59544    }),\n    Shadowmeld                        = Action.Create({ Type = \"Spell\", ID = 58984    }), \n    Stoneform                        = Action.Create({ Type = \"Spell\", ID = 20594    }), \n    BagofTricks                        = Action.Create({ Type = \"Spell\", ID = 312411    }),\n    WilloftheForsaken                = Action.Create({ Type = \"Spell\", ID = 7744        }),   \n    EscapeArtist                    = Action.Create({ Type = \"Spell\", ID = 20589    }), \n    EveryManforHimself                = Action.Create({ Type = \"Spell\", ID = 59752    }), \n    LightsJudgment                    = Action.Create({ Type = \"Spell\", ID = 255647    }),\n    RocketJump                        = Action.Create({ Type = \"Spell\", ID = 69070    }),\n    DarkFlight                        = Action.Create({ Type = \"Spell\", ID = 68992    }),\n    \n    -- Monk General\n    BlackoutKick                    = Action.Create({ Type = \"Spell\", ID = 100784    }),\n    CracklingJadeLightning          = Action.Create({ Type = \"Spell\", ID = 117952    }),    \n    Detox                             = Action.Create({ Type = \"Spell\", ID = 218164    }),    \n    ExpelHarm                        = Action.Create({ Type = \"Spell\", ID = 322101    }),\n    FortifyingBrew                  = Action.Create({ Type = \"Spell\", ID = 243435    }),    \n    LegSweep                        = Action.Create({ Type = \"Spell\", ID = 119381    }),\n    MarkoftheCrane                  = Action.Create({ Type = \"Spell\", ID = 228287    }),    \n    MysticTouch                       = Action.Create({ Type = \"Spell\", ID = 8647, Hidden = true         }),\n    Paralysis                        = Action.Create({ Type = \"Spell\", ID = 344359    }),\n    Provoke                            = Action.Create({ Type = \"Spell\", ID = 115546    }),\n    Resuscitate                        = Action.Create({ Type = \"Spell\", ID = 115178    }),    \n    Roll                            = Action.Create({ Type = \"Spell\", ID = 109132    }),    \n    SpinningCraneKick               = Action.Create({ Type = \"Spell\", ID = 101546    }),\n    TigerPalm                        = Action.Create({ Type = \"Spell\", ID = 100780    }),\n    RushingTigerPalm                = Action.Create({ Type = \"Spell\", ID = 337341    }),\n    TouchofDeath                       = Action.Create({ Type = \"Spell\", ID = 325215    }),\n    Transcendence                   = Action.Create({ Type = \"Spell\", ID = 101649    }),\n    TranscendenceTransfer           = Action.Create({ Type = \"Spell\", ID = 119996    }),\n    Vivify                           = Action.Create({ Type = \"Spell\", ID = 116670    }),\n    ZenFlight                       = Action.Create({ Type = \"Spell\", ID = 125883    }),\n    ZenPilgrimage                      = Action.Create({ Type = \"Spell\", ID = 126892    }),\n    \n    -- WindWalker Specific\n    Disable                           = Action.Create({ Type = \"Spell\", ID = 116095    }),\n    FistsofFury                       = Action.Create({ Type = \"Spell\", ID = 113656    }),\n    FlyingSerpentKick               = Action.Create({ Type = \"Spell\", ID = 344487    }),\n    FlyingSerpentKickJump           = Action.Create({ Type = \"Spell\", ID = 115057    }), -- Action ID of FlyingSerpentKick\n    InvokeXuen                       = Action.Create({ Type = \"Spell\", ID = 323999    }),\n    RisingSunKick                   = Action.Create({ Type = \"Spell\", ID = 107428    }),\n    SpearHandStrike                   = Action.Create({ Type = \"Spell\", ID = 116705    }),\n    StormEarthAndFire               = Action.Create({ Type = \"Spell\", ID = 137639              }), \n    StormEarthAndFireFixate         = Action.Create({ Type = \"Spell\", ID = 221771           }), -- while StormEarthAndFire buff\n    TouchofKarma                       = Action.Create({ Type = \"Spell\", ID = 122470    }),\n    SpinningCraneKick               = Action.Create({ Type = \"Spell\", ID = 101546    }),\n    Afterlife                        = Action.Create({ Type = \"Spell\", ID = 116092, Hidden = true        }),\n    MasteryComboStrikes             = Action.Create({ Type = \"Spell\", ID = 115636, Hidden = true        }),\n    Windwalking                        = Action.Create({ Type = \"Spell\", ID = 157411, Hidden = true        }),\n    \n    --Other\n    BlessingofKings                  = Action.Create({ Type = \"Spell\", ID = 58054    }),\n    MortalWoundsDebuff                = Action.Create({ Type = \"Spell\", ID = 115804   }),\n    StopCast                        = Action.Create({ Type = \"Spell\", ID = 61721, Hidden = true           }),\n    \n    --Hidden\n    BlackoutKickBuff                = Action.Create({ Type = \"Spell\", ID = 116768, Hidden = true  }),\n    \n    \n    \n    -- Normal Talents\n    EyeoftheTiger                   = Action.Create({ Type = \"Spell\", ID = 196607, Hidden = true    }),\n    ChiWave                            = Action.Create({ Type = \"Spell\", ID = 115098    }),\n    ChiBurst                        = Action.Create({ Type = \"Spell\", ID = 123986    }),\n    Celerity                           = Action.Create({ Type = \"Spell\", ID = 115173, Hidden = true    }),\n    ChiTorpedo                      = Action.Create({ Type = \"Spell\", ID = 115008    }),\n    TigersLust                        = Action.Create({ Type = \"Spell\", ID = 116841    }),\n    Ascension                        = Action.Create({ Type = \"Spell\", ID = 115396, Hidden = true    }),\n    FistoftheWhiteTiger             = Action.Create({ Type = \"Spell\", ID = 261947    }),\n    EnergizingElixir                = Action.Create({ Type = \"Spell\", ID = 115288    }),\n    TigerTailSweep                  = Action.Create({ Type = \"Spell\", ID = 264348, Hidden = true    }),\n    GoodKarma                        = Action.Create({ Type = \"Spell\", ID = 280195, Hidden = true    }),\n    RingofPeace                        = Action.Create({ Type = \"Spell\", ID = 116844    }),\n    InnerStrength                   = Action.Create({ Type = \"Spell\", ID = 261767, Hidden = true    }),\n    DiffuseMagic                    = Action.Create({ Type = \"Spell\", ID = 122783    }),\n    DampenHarm                      = Action.Create({ Type = \"Spell\", ID = 122278    }),\n    HitCombo                        = Action.Create({ Type = \"Spell\", ID = 196740, Hidden = true    }),    \n    RushingJadeWind                 = Action.Create({ Type = \"Spell\", ID = 116847    }),\n    DanceofChiJi                    = Action.Create({ Type = \"Spell\", ID = 325201, Hidden = true    }),\n    SpiritualFocus                  = Action.Create({ Type = \"Spell\", ID = 280197, Hidden = true    }),\n    WhirlingDragonPunch             = Action.Create({ Type = \"Spell\", ID = 152175    }),\n    Serenity                        = Action.Create({ Type = \"Spell\", ID = 152173    }),\n    \n    \n    -- PvP Talents\n    RidetheWind                    = Action.Create({ Type = \"Spell\", ID = 201372, Hidden = true    }),\n    TigereyeBrew                    = Action.Create({ Type = \"Spell\", ID = 247483    }),\n    ReverseHarm                    = Action.Create({ Type = \"Spell\", ID = 342928, Hidden = true    }),\n    DisablingReach                        = Action.Create({ Type = \"Spell\", ID = 201769, Hidden = true    }),\n    GrappleWeapon                = Action.Create({ Type = \"Spell\", ID = 233759    }),\n    AlphaTiger                    = Action.Create({ Type = \"Spell\", ID = 287503, Hidden = true    }),\n    WindWaker                    = Action.Create({ Type = \"Spell\", ID = 287506, Hidden = true    }),\n    PressurePoints                = Action.Create({ Type = \"Spell\", ID = 345829, Hidden = true    }),    \n    TurboFists                = Action.Create({ Type = \"Spell\", ID = 287681, Hidden = true    }),\n    \n    \n    -- Covenant Abilities\n    SummonSteward                    = Action.Create({ Type = \"Spell\", ID = 324739    }),\n    DoorofShadows                    = Action.Create({ Type = \"Spell\", ID = 300728    }),\n    Fleshcraft                        = Action.Create({ Type = \"Spell\", ID = 321687    }),\n    Fleshcraftshield                  = Action.Create({ Type = \"Spell\", ID = 324867    }),\n    Soulshape                        = Action.Create({ Type = \"Spell\", ID = 310143    }),\n    WeaponsofOrder                = Action.Create({ Type = \"Spell\", ID = 310454    }),\n    WeaponsofOrderWW                =Action.Create({ Type = \"Spell\", ID = 311054, Hidden = true    }),\n    BonedustBrew                    = Action.Create({ Type = \"Spell\", ID = 325216    }),\n    DeathsDue                        = Action.Create({ Type = \"Spell\", ID = 324128    }),  \n    FaelineStomp                        = Action.Create({ Type = \"Spell\", ID = 327104    }),\n    FallenOrder                        = Action.Create({ Type = \"Spell\", ID = 326860    }),       \n    \n    \n    -- Conduits\n    CoordinatedOffensive            = Action.Create({ Type = \"Spell\", ID = 336598, Hidden = true    }),\n    \n    \n    -- Legendaries\n    -- General Legendaries\n    DeathsEmbrace                    = Action.Create({ Type = \"Spell\", ID = 334728, Hidden = true    }),\n    EmperorsCapacitorStack              = Action.Create({ Type = \"Spell\", ID = 337291   }),\n    ChiEnergy                              = Action.Create({ Type = \"Spell\", ID = 337571    }),\n    \n    \n    --Wind Walker Legendaries\n    DeadliestCoil                    = Action.Create({ Type = \"Spell\", ID = 334949, Hidden = true    }),\n    \n    \n    --Anima Powers - to add later...\n    \n    \n    -- Trinkets\n    DreadFireVessel            = Create({ Type = \"Trinket\", ID = 6805 }),   \n    \n    \n    -- Potions\n    PotionofUnbridledFury            = Action.Create({ Type = \"Potion\", ID = 169299, QueueForbidden = true }),     \n    SuperiorPotionofUnbridledFury    = Action.Create({ Type = \"Potion\", ID = 168489, QueueForbidden = true }),\n    PotionofSpectralStrength        = Action.Create({ Type = \"Potion\", ID = 171275, QueueForbidden = true }),\n    PotionofSpectralAgility      = Action.Create({ Type = \"Potion\", ID = 171270, QueueForbidden = true }),\n    PotionofSpectralStamina            = Action.Create({ Type = \"Potion\", ID = 171274, QueueForbidden = true }),\n    PotionofEmpoweredExorcisms        = Action.Create({ Type = \"Potion\", ID = 171352, QueueForbidden = true }),\n    PotionofHardenedShadows            = Action.Create({ Type = \"Potion\", ID = 171271, QueueForbidden = true }),\n    PotionofPhantomFire                = Action.Create({ Type = \"Potion\", ID = 171349, QueueForbidden = true }),\n    PotionofDeathlyFixation            = Action.Create({ Type = \"Potion\", ID = 171351, QueueForbidden = true }),\n    SpiritualHealingPotion            = Action.Create({ Type = \"Potion\", ID = 171267, QueueForbidden = true }),      \n    \n    -- Misc\n    Channeling                      = Action.Create({ Type = \"Spell\", ID = 209274, Hidden = true     }),    -- Show an icon during channeling\n    TargetEnemy                     = Action.Create({ Type = \"Spell\", ID = 44603, Hidden = true     }),    -- Change Target (Tab button)\n    StopCast                        = Action.Create({ Type = \"Spell\", ID = 61721, Hidden = true     }),        -- spell_magic_polymorphrabbit\n    PoolResource                    = Action.Create({ Type = \"Spell\", ID = 209274, Hidden = true     }),\n    Quake                           = Action.Create({ Type = \"Spell\", ID = 240447, Hidden = true     }), -- Quake (Mythic Plus Affix)\n    GCD                          = Action.Create({ Type = \"Spell\", ID = 61304, Hidden = true     }),   \n}\n\n\nlocal A = setmetatable(Action[ACTION_CONST_MONK_WINDWALKER], { __index = Action })\n\nlocal player                                 = \"player\"\nlocal PartyUnits\nTMW:RegisterSelfDestructingCallback(\"TMW_ACTION_IS_INITIALIZED_PRE\", function()\n        PartyUnits = GetToggle(2, \"PartyUnits\", ACTION_CONST_MONK_WINDWALKER)\n        return true -- Signal RegisterSelfDestructingCallback to unregister\nend)\n\nlocal function num(val)\n    if val then return 1 else return 0 end\nend\n\nlocal function bool(val)\n    return val ~= 0\nend\nlocal player = \"player\"\n----------------------\n-------- COMMON PREAPL -------\n----------------------\nlocal Temp = {\n    TotalAndPhys                            = {\"TotalImun\", \"DamagePhysImun\"},\n    TotalAndCC                              = {\"TotalImun\", \"CCTotalImun\"},\n    TotalAndPhysKick                        = {\"TotalImun\", \"DamagePhysImun\", \"KickImun\"},\n    TotalAndPhysAndCC                       = {\"TotalImun\", \"DamagePhysImun\", \"CCTotalImun\"},\n    TotalAndPhysAndStun                     = {\"TotalImun\", \"DamagePhysImun\", \"StunImun\"},\n    TotalAndPhysAndCCAndStun                = {\"TotalImun\", \"DamagePhysImun\", \"CCTotalImun\", \"StunImun\"},\n    TotalAndMag                             = {\"TotalImun\", \"DamageMagicImun\"},\n    TotalAndMagKick                         = {\"TotalImun\", \"DamageMagicImun\", \"KickImun\"},\n    DisablePhys                             = {\"TotalImun\", \"DamagePhysImun\", \"Freedom\", \"CCTotalImun\"},\n    DisableMag                              = {\"TotalImun\", \"DamageMagicImun\", \"Freedom\", \"CCTotalImun\"},\n    IsSlotTrinketBlocked                    = {},\n}; do     \n    \n    -- Push IsSlotTrinketBlocked\n    for key, val in pairs(Action[ACTION_CONST_MONK_WINDWALKER]) do \n        if type(val) == \"table\" and val.Type == \"Trinket\" then \n            Temp.IsSlotTrinketBlocked[val.ID] = true\n        end \n    end \nend \n\nlocal function IsSchoolFree()\n    return LoC:IsMissed(\"SILENCE\") and LoC:Get(\"SCHOOL_INTERRUPT\", \"NATURE\") == 0\nend \n\nlocal IsIndoors, UnitIsUnit, UnitName = IsIndoors, UnitIsUnit, UnitName\n\n--Register Toaster\nToaster:Register(\"TripToast\", function(toast, ...)\n        local title, message, spellID = ...\n        toast:SetTitle(title or \"nil\")\n        toast:SetText(message or \"nil\")\n        if spellID then \n            if type(spellID) ~= \"number\" then \n                error(tostring(spellID) .. \" (spellID) is not a number for TripToast!\")\n                toast:SetIconTexture(\"Interface\\FriendsFrame\\Battlenet-WoWicon\")\n            else \n                toast:SetIconTexture((GetSpellTexture(spellID)))\n            end \n        else \n            toast:SetIconTexture(\"Interface\\FriendsFrame\\Battlenet-WoWicon\")\n        end \n        toast:SetUrgencyLevel(\"normal\") \nend)\n\nfunction Player:AreaTTD(range)\n    local ttdtotal = 0\n    local totalunits = 0\n    local r = range\n    \n    for _, unitID in pairs(ActiveUnitPlates) do \n        if Unit(unitID):GetRange() <= r then \n            local ttd = Unit(unitID):TimeToDie()\n            totalunits = totalunits + 1\n            ttdtotal = ttd + ttdtotal\n        end\n    end\n    \n    if totalunits == 0 then\n        return 0\n    end\n    \n    return ttdtotal / totalunits\nend    \n\nlocal function InMelee(unit)\n    -- @return boolean \n    return A.TigerPalm:IsInRange(unit)\nend \n\nlocal function GetByRange(count, range, isCheckEqual, isCheckCombat)\n    -- @return boolean \n    local c = 0 \n    for unit in pairs(ActiveUnitPlates) do \n        if (not isCheckEqual or not UnitIsUnit(\"target\", unit)) and (not isCheckCombat or Unit(unit):CombatTime() > 0) then \n            if InMelee(unit) then \n                c = c + 1\n            elseif range then \n                local r = Unit(unit):GetRange()\n                if r > 0 and r <= range then \n                    c = c + 1\n                end \n            end \n            \n            if c >= count then \n                return true \n            end \n        end \n    end\nend \nGetByRange = A.MakeFunctionCachedDynamic(GetByRange)\n\n-- Non GCD spell check\nlocal function countInterruptGCD(unit)\n    if not A.SpearHandStrike:IsReadyByPassCastGCD(unit) or not A.SpearHandStrike:AbsentImun(unit, Temp.TotalAndPhysKick, true) then \n        return true \n    end \nend \n\n--Work around fix for AoE off breaking\nif UseAoE == true\nthen AoETargets = Action.GetToggle(2,\"AoETargets\")\nelse AoETargets = 10\nend\n\n-- Interrupts spells\nlocal function Interrupts(unit)\n    local LegSweepInterrupt = Action.GetToggle(2, \"LegSweepInterrupt\")\n    local ParalysisInterrupt = Action.GetToggle(2, \"ParalysisInterrupt\")\n    \n    if not A.GetToggle(2, \"InterruptsRyan\") and (A.InstanceInfo.ID >= 2284 and A.InstanceInfo.ID <= 2296) --uses ryan interrupt table in SL dungeons and raid instance IDs\n    then\n        useKick, useCC, useRacial, notKickAble, castLeft = Action.InterruptIsValid(unit, \"RyanInterrupts\", true)\n    else \n        useKick, useCC, useRacial, notInterruptable, castRemainsTime, castDoneTime = Action.InterruptIsValid(unit, nil, nil, countInterruptGCD(unit))\n    end \n    \n    if castRemainsTime >= A.GetLatency() then\n        -- Spear Hand Strike\n        if useKick and not notInterruptable and A.SpearHandStrike:IsReady(unit) then \n            return A.SpearHandStrike\n        end\n        \n        -- Paralysis\n        if A.Paralysis:IsReady(unit) and ParalysisInterrupt and A.SpearHandStrike:GetCooldown() > 1 and useCC then \n            return A.Paralysis\n        end \n        \n        -- LegSweep\n        if A.LegSweep:IsReady(unit) and LegSweepInterrupt and A.SpearHandStrike:GetCooldown() > 1 and useCC then \n            return A.LegSweep\n        end \n        \n        if useRacial and A.QuakingPalm:AutoRacial(unit) then \n            return A.QuakingPalm\n        end \n        \n        if useRacial and A.Haymaker:AutoRacial(unit) then \n            return A.Haymaker\n        end \n        \n        if useRacial and A.WarStomp:AutoRacial(unit) then \n            return A.WarStomp\n        end \n        \n        if useRacial and A.BullRush:AutoRacial(unit) then \n            return A.BullRush\n        end \n    end\nend\n\nlocal function SelfDefensives(unit)\n    -- TouchofKarma\n    local TouchofKarma = GetToggle(2, \"TouchofKarma\")\n    if TouchofKarma >= 0 then \n        local unit\n        if IsUnitEnemy(\"mouseover\") then \n            unit = \"mouseover\"\n        elseif IsUnitEnemy(\"target\") then \n            unit = \"target\"\n        end     \n        \n        if unit and A.TouchofKarma:IsReady(unit) and A.TouchofKarma:AbsentImun(unit, Temp.TotalAndPhys, true) then \n            if     (\n                -- Auto \n                (\n                    TouchofKarma >= 100 and \n                    (\n                        Unit(player):TimeToDieX(30) < 2.5 or \n                        (\n                            A.IsInPvP and \n                            Unit(player):HealthPercent() < 70 and \n                            Unit(player):IsFocused(nil, true) \n                        )\n                    )\n                ) or \n                -- Custom \n                (\n                    TouchofKarma < 100 and \n                    Unit(player):HealthPercent() < TouchofKarma\n                )\n            ) and \n            (\n                Unit(player):HasBuffs(\"DeffBuffs\", true) == 0 or \n                Unit(player):HealthPercent() < 20\n            )\n            then \n                return A.TouchofKarma\n            end \n        end \n    end \n    \n    -- DampenHarm\n    local DampenHarm = GetToggle(2, \"DampenHarm\")\n    if     DampenHarm >= 0 and A.DampenHarm:IsReady(player) and \n    (\n        (     -- Auto \n            DampenHarm >= 100 and \n            (\n                -- HP lose per sec >= 20\n                Unit(player):GetDMG() * 100 / Unit(player):HealthMax() >= 20 or \n                Unit(player):GetRealTimeDMG() >= Unit(player):HealthMax() * 0.20 or \n                -- TTD \n                Unit(player):TimeToDieX(25) < 5 or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused() \n                        )\n                    )\n                )\n            ) and \n            Unit(player):HasBuffs(\"DeffBuffs\", true) == 0\n        ) or \n        (    -- Custom\n            DampenHarm < 100 and \n            Unit(player):HealthPercent() <= DampenHarm\n        )\n    ) \n    then \n        return A.DampenHarm\n    end     \n    \n    -- DiffuseMagic\n    local DiffuseMagic = GetToggle(2, \"DiffuseMagic\")\n    if     DiffuseMagic >= 0 and A.DiffuseMagic:IsReady(player) and \n    (\n        (     -- Auto \n            DiffuseMagic >= 100 and \n            Unit(player):TimeToDieMagicX(35) < 5 and \n            -- Magic Damage still appear\n            Unit(player):GetRealTimeDMG(4) > 0 and \n            Unit(player):HasBuffs(\"DeffBuffsMagic\") == 0\n        ) or \n        (    -- Custom\n            DiffuseMagic < 100 and \n            Unit(player):HealthPercent() <= DiffuseMagic\n        )\n    ) \n    then \n        return A.DiffuseMagic\n    end \n    \n    -- FortifyingBrew\n    local FortifyingBrew = GetToggle(2, \"FortifyingBrew\")\n    if     FortifyingBrew >= 0 and A.FortifyingBrew:IsReady(player) and \n    (\n        (     -- Auto \n            FortifyingBrew >= 100 and \n            (\n                (\n                    not A.IsInPvP and \n                    Unit(player):HealthPercent() < 40 and \n                    Unit(player):TimeToDieX(20) < 6 \n                ) or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused(nil, true)                                 \n                        )\n                    )\n                )\n            ) and \n            Unit(player):HasBuffs(\"DeffBuffs\") == 0\n        ) or \n        (    -- Custom\n            FortifyingBrew < 100 and \n            Unit(player):HealthPercent() <= FortifyingBrew\n        )\n    ) \n    then \n        return A.FortifyingBrew\n    end \n    \n    -- Stoneform (On Deffensive)\n    local Stoneform = GetToggle(2, \"Stoneform\")\n    if     Stoneform >= 0 and A.Stoneform:IsRacialReadyP(player) and \n    (\n        (     -- Auto \n            Stoneform >= 100 and \n            (\n                (\n                    not A.IsInPvP and                         \n                    Unit(player):TimeToDieX(65) < 3 \n                ) or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused()                                 \n                        )\n                    )\n                )\n            ) \n        ) or \n        (    -- Custom\n            Stoneform < 100 and \n            Unit(player):HealthPercent() <= Stoneform\n        )\n    ) \n    then \n        return A.Stoneform\n    end     \n    \n    -- Stoneform (Self Dispel)\n    if not A.IsInPvP and A.Stoneform:IsRacialReady(player, true) and AuraIsValid(player, \"UseDispel\", \"Dispel\") then \n        return A.Stoneform\n    end\nend \n\n--Fleshcraft\n--local FleshcraftHP = Action.GetToggle(2, \"FleshcraftHP\")\n--local FlashcraftOperator = Action.GetToggle(2, \"FleshcraftOperator\")\n--local FlashcraftTTD = Action.GetToggle(2, \"FleshcraftTTD\")\n--if FleshcraftOperator == \"AND\" and A.Fleshcraft:IsReady(player) and A.Fleshcraft:GetSpellTimeSinceLastCast() > 120 and Unit(player):HealthPercent() <= FleshcraftHP and Unit(player):TimeToDie() <= FlashcraftTTD then\n--    return A.Fleshcraft\n--end\n--if FleshcraftOperator == \"OR\" and A.Fleshcraft:IsReady(player) and A.Fleshcraft:GetSpellTimeSinceLastCast() > 120 and (Unit(player):HealthPercent() <= FleshcraftHP or Unit(player):TimeToDie() <= FlashcraftTTD) then\n--    return A.Fleshcraft\n--end\n\n\nSelfDefensives = A.MakeFunctionCachedDynamic(SelfDefensives)\n\nlocal function GetAttackType()\n    if A.TigereyeBrew:IsSpellLearned() and Unit(player):HasBuffs(A.TigereyeBrew.ID, true, true) > 0 then \n        return Temp.TotalAndMag\n    end  \n    return Temp.TotalAndPhys\nend \n\nlocal function GetAttackTypeForDisable()\n    if A.TigereyeBrew:IsSpellLearned() and Unit(player):HasBuffs(A.TigereyeBrew.ID, true, true) > 0 then \n        return Temp.DisableMag\n    end  \n    return Temp.DisablePhys\nend \n\n\n\n--- ======= ACTION LISTS =======\n-- [3] Single Rotation\nA[3] = function(icon, isMulti)\n    ----------\n    --- ROTATION VAR ---\n    ----------\n    local EnemyRotation, FriendlyRotation\n    local isSchoolFree = IsSchoolFree()\n    local isMoving = A.Player:IsMoving()\n    local inCombat = Unit(\"player\"):CombatTime() > 0\n    local combatTime = Unit(\"player\"):CombatTime()\n    local inDisarm  = LoC:Get(\"DISARM\") > 0\n    local Energy = Player:Energy()\n    local Chi = Player:Chi()\n    local inMelee             = false \n    \n    --    local PotionTTD = Unit(\"target\"):TimeToDie() > Action.GetToggle(2, \"PotionTTD\")\n    local AutoPotionSelect = Action.GetToggle(2, \"AutoPotionSelect\")\n    local PotionTrue = Action.GetToggle(1, \"Potion\")    \n    local Racial = Action.GetToggle(1, \"Racial\")\n    local UseAoE = Action.GetToggle(2, \"AoE\")\n    local AoETargets = Action.GetToggle(2, \"AoETargets\")\n    local currentTargets = MultiUnits:GetByRange(7)    \n    local MouseoverTarget = UnitName(\"mouseover\")\n    \n    local function ComboStrike(SpellObject)\n        return (not Player:PrevGCD(1, SpellObject))\n    end\n    \n    \n    --actions+=/variable,name=hold_xuen,op=set,value=cooldown.invoke_xuen_the_white_tiger.remains>fight_remains|fight_remains<120&fight_remains>cooldown.serenity.remains&cooldown.serenity.remains>10\n    VarHoldXuen = ((A.InvokeXuen:GetCooldown() > Player:AreaTTD(10)) or (Player:AreaTTD(10) < 120 and Player:AreaTTD(10) > A.Serenity:GetCooldown() and A.Serenity:GetCooldown() > 10))\n    \n    --actions.cd_serenity=variable,name=serenity_burst,op=set,value=cooldown.serenity.remains<1|pet.xuen_the_white_tiger.active&cooldown.serenity.remains>30|fight_remains<20\n    VarSerenityBurst = (A.Serenity:GetCooldown() < 1 or (A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 and A.Serenity:GetCooldown() > 30) or Player:AreaTTD(10) < 20)\n    \n    --------------------------------------\n    -------- ENEMY UNIT ROTATION ---------\n    --------------------------------------\n    local function EnemyRotation(unit)\n        local _, _, _, _, _, _, _, ChannelCheckplayer = UnitChannelInfo(\"player\")\n        local _, _, _, _, ChannelEndMouseover, _, _, ChannelCheckmouseover = UnitChannelInfo(\"mouseover\")\n        \n        local inMelee  = A.TigerPalm:IsInRange(target or unit) \n        -- StormEarthAndFireFixate\n        if target and useStormEarthAndFireFixate and isSchoolFree and A.StormEarthAndFireFixate:IsReady(target) and not A.Serenity:IsSpellLearned() and Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) > 0 then \n            return A.StormEarthAndFireFixate:Show(icon)\n        end    \n        \n        -- Check if target is explosive or totem for dont use AoE spells \n        if Unit(unit):IsExplosives() or (A.Zone ~= \"none\" and Unit(unit):IsTotem()) then\n            inAoE = false\n        end\n        \n        --Explosive Rotation        \n        local function ExplosiveRotation()\n            if Unit(\"target\"):IsExplosives() and ChannelCheckplayer == 113656 then\n                return A.StopCast:Show(icon)\n            end\n            if A.TigerPalm:IsReady(\"target\") and (ComboStrike(A.TigerPalm) or not A.HitCombo:IsTalentLearned()) then\n                return A.TigerPalm:Show(icon)\n            end\n            if A.BlackoutKick:IsReady(\"target\") and (ComboStrike(A.BlackoutKick) or not A.HitCombo:IsTalentLearned()) then\n                return A.BlackoutKick:Show(icon)\n            end\n            if A.RisingSunKick:IsReady(\"target\") then\n                return A.RisingSunKick:Show(icon)\n            end\n        end\n        \n        if Unit(\"target\"):IsExplosives() and ExplosiveRotation() then\n            return true\n        end\n        \n        --Explosive TargetMouseOver\n        A[6] = function(icon, isMulti)        \n            if (A.TigerPalm:IsReady(\"mouseover\") or A.BlackoutKick:IsReady(\"mouseover\") or A.RisingSunKick:IsReady(\"mouseover\")) and A.TigerPalm:IsInRange(\"mouseover\") and Action.GetToggle(2, \"ExplosiveMouseover\") and Unit(\"mouseover\"):IsExplosives() and (not ChannelCheckplayer == 113656 or (Unit(\"mouseover\"):IsExplosives() and ChannelEndMouseover < 2000)) then\n                return A:Show(icon, ACTION_CONST_LEFT)\n            end\n        end        \n        \n        -- Out of combat / Precombat\n        if target and inCombat == 0 and not A.IsInPvP then     \n            local Pull = BossMods:GetPullTimer()    \n            \n            -- PotionofUnbridledFury => ChiWave => ChiBurst  \n            if Pull > 0 then \n                -- Timing\n                local extra_time = GetCurrentGCD() + 0.1\n                local ChiWave, ChiBurst\n                \n                -- ChiWave\n                -- actions.precombat+=/chi_wave,if=!talent.energizing_elixir.enabled\n                if inAoE and isSchoolFree and A.ChiWave:IsReady(target, true, nil, true) and (not A.EnergizingElixir:IsTalentLearned()) and \n                (\n                    not A.IsInPvP or \n                    (\n                        Unit(target):GetRange() <= 25 and\n                        not EnemyTeam(\"HEALER\"):IsBreakAble(25) \n                    )\n                )\n                then \n                    ChiWave = true \n                    extra_time = extra_time + GetGCD()\n                end \n                \n                -- ChiBurst\n                -- actions.precombat+=/chi_burst\n                if inAoE and not isMoving and isSchoolFree and A.ChiBurst:IsReady(target, true, nil, true) and                  \n                (\n                    not A.IsInPvP or \n                    (\n                        Unit(target):GetRange() <= 40 and\n                        not EnemyTeam(\"HEALER\"):IsBreakAble(40) \n                    )\n                )\n                then \n                    ChiBurst = true \n                    extra_time = extra_time + A.ChiBurst:GetSpellCastTime()\n                end \n                \n                \n                -- Pull Rotation\n                if not inDisarm and A.PotionofUnbridledFury:IsReady(target, true, nil, true) and Pull <= 2.5 then \n                    return A.PotionofUnbridledFury:Show(icon)\n                end \n                \n                if ChiWave and not ShouldStop() and Pull <= extra_time then \n                    return A.ChiWave:Show(icon)\n                end \n                \n                if ChiBurst and not ShouldStop() and Pull <= extra_time then \n                    return A.ChiBurst:Show(icon)\n                end\n                \n                -- Return \n                return \n            end         \n        end \n        \n        \n        --#####################\n        --##### SERENITY ######\n        --#####################    \n        local function SerenityRotation()\n            \n            --actions.serenity=fists_of_fury,if=buff.serenity.remains<1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(player):HasBuffs(A.Serenity.ID, true) < 1 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&(active_enemies>=3|active_enemies>1&!cooldown.rising_sun_kick.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (MultiUnits:GetByRange(10, 3) >= 3 or (MultiUnits:GetByRange(10, 3) >= 1 and A.RisingSunKick:GetCooldown() > 0)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fists_of_fury,if=active_enemies>=3\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 3) >= 3 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&buff.weapons_of_order_ww.up&cooldown.rising_sun_kick.remains>2\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0 and A.RisingSunKick:GetCooldown() > 2 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fists_of_fury,interrupt_if=!cooldown.rising_sun_kick.up\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Interrupt for FoF\n            if A.FistsofFury:GetSpellTimeSinceLastCast() < 1 and Unit(player):HasBuffs(A.Serenity.ID, true) > 0 and A.RisingSunKick:IsReady(unit) then\n                return A.StopCast:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&debuff.bonedust_brew.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(\"target\"):HasDeBuffs(A.BonedustBrew.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady() and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.serenity+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike|!talent.hit_combo\n            if A.BlackoutKick:IsReady(unit) and (ComboStrike(A.BlackoutKick) or not A.HitCombo:IsTalentLearned()) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick\n            if A.SpinningCraneKick:IsReady() and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n        end\n        \n        \n        --#####################\n        --####### OPENER ######\n        --#####################\n        \n        local function OpenerRotation()\n            \n            --actions.opener=fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.opener+=/expel_harm,if=talent.chi_burst.enabled&chi.max-chi>=3\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and A.ChiBurst:IsTalentLearned() and Player:ChiDeficit() >= 3 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.opener+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.opener+=/chi_wave,if=chi.max-chi=2\n            if A.ChiWave:IsReady(unit) and Player:ChiDeficit() == 2 then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.opener+=/expel_harm\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.opener+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and Player:ChiDeficit() >= 2 and ComboStrike(A.TigerPalm) then\n                return A.TigerPalm:Show(icon)\n            end\n        end\n        \n        \n        --#####################\n        --######## AOE ########\n        --#####################\n        \n        local function AoERotation()\n            --actions.aoe=whirling_dragon_punch\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            if A.StormEarthAndFire:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Action.GetToggle(2, \"SEFOutBurst\") and A.StormEarthAndFire:GetSpellCharges() == 2 and Player:AreaTTD(10) > 15 then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            if A.StormEarthAndFireFixate:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and A.CoordinatedOffensive:IsSoulbindLearned() then\n                return A.StormEarthandFire:Show(icon)\n            end\n            \n            --actions.aoe+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>2|chi.max-chi>=4\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((Player:ChiDeficit() >= 2 and Player:EnergyTimeToMaxPredicted()) > 2 or Player:ChiDeficit() >= 4) then\n                return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.aoe+=/spinning_crane_kick,if=combo_strike&(buff.dance_of_chiji.up|debuff.bonedust_brew.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (Unit(\"player\"):HasBuffs(A.DanceofChiJi.ID, true) > 0 or Unit(\"player\"):HasBuffs(A.BonedustBrew.ID, true) > 0) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.aoe+=/fists_of_fury,if=energy.time_to_max>execute_time|chi.max-chi<=1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (((Player:EnergyTimeToMaxPredicted() > Unit(\"target\"):TimeToDieX(15)) or Unit(\"target\"):IsDummy()) or Player:ChiDeficit() <= 1) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.aoe+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=(talent.whirling_dragon_punch&cooldown.rising_sun_kick.duration>cooldown.whirling_dragon_punch.remains+4)&(cooldown.fists_of_fury.remains>3|chi>=5)\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) and (A.WhirlingDragonPunch:IsTalentLearned() and (10 * Player:SpellHaste()) > (A.WhirlingDragonPunch:GetCooldown() + 4)) and (A.FistsofFury:GetCooldown() > 3 or Player:Chi() >= 5) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.aoe+=/rushing_jade_wind,if=buff.rushing_jade_wind.down\n            if A.RushingJadeWind:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(\"player\"):HasBuffs(A.RushingJadeWind.ID, true) == 0 then\n                return A.RushingJadeWind:Show(icon)\n            end\n            \n            --actions.aoe+=/spinning_crane_kick,if=combo_strike&((cooldown.bonedust_brew.remains>2&(chi>3|cooldown.fists_of_fury.remains>6)&(chi>=5|cooldown.fists_of_fury.remains>2))|energy.time_to_max<=3)\n            if A.SpinningCraneKick:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and (ComboStrike(A.SpinningCraneKick) and (((A.BonedustBrew:GetCooldown() > 2 or not (C_Covenants.GetActiveCovenantID() == 4)) and (Player:Chi() > 3 or (A.FistsofFury:GetCooldown() > 6)) and (Player:Chi() >= 5 or A.FistsofFury:GetCooldown() > 2)) or Player:EnergyTimeToMaxPredicted() <= 3)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.aoe+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.aoe+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.aoe+=/chi_burst,if=chi.max-chi>=2\n            if A.ChiBurst:IsReady(player) and Player:ChiDeficit() >= 2 and not fsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.aoe+=/crackling_jade_lightning,if=buff.the_emperors_capacitor.stack>19&energy.time_to_max>execute_time-1&cooldown.fists_of_fury.remains>execute_time\n            if A.CracklingJadeLightning:IsReady(unit) and Unit(\"player\"):HasBuffs(A.EmperorsCapacitorStack.ID, true) > 19 and Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1) and A.FistsofFury:GetCooldown() > Unit(\"target\"):TimeToDieX(15) then\n                return A.CracklingJadeLightning:Show(icon)\n            end\n            \n            --actions.aoe+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=chi.max-chi>=2&(!talent.hit_combo|combo_strike)\n            if A.TigerPalm:IsReady(unit) and Player:ChiDeficit() >= 2 and (not A.HitCombo:IsTalentLearned() or ComboStrike(A.TigerPalm)) then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            \n            --actions.aoe+=/chi_wave,if=combo_strike\n            if A.ChiWave:IsReady(unit) and ComboStrike(A.ChiWave) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.aoe+=/flying_serpent_kick,if=buff.bok_proc.down,interrupt=1\n            if A.FlyingSerpentKick:IsReady(unit) and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and Unit(\"target\"):GetRange() <= 8 and Unit(\"player\"):HasBuffs(A.BlackoutKickBuff, true) == 0 and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then\n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n            \n            --actions.aoe+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&(buff.bok_proc.up|talent.hit_combo&prev_gcd.1.tiger_palm&chi=2&cooldown.fists_of_fury.remains<3|chi.max-chi<=1&prev_gcd.1.spinning_crane_kick&energy.time_to_max<3)\n            if A.BlackoutKick:IsReady(unit) and (ComboStrike(A.BlackoutKick) and ((Unit(\"target\"):HasBuffs(A.BlackoutKickBuff.ID, true) > 0) or (A.HitCombo:IsTalentLearned() and Player:PrevGCD(1, A.TigerPalm) and Player:Chi() == 2 and A.FistsofFury:GetCooldown() < 3) or (Player:ChiDeficit() <= 1 and Player:PrevGCD(1, A.SpinningCraneKick) and Player:EnergyTimeToMaxPredicted() < 3)))then\n                return A.BlackoutKick:Show(icon)\n            end\n        end\n        \n        --#####################\n        --#### COOLDOWNSEF ####\n        --#####################\n        \n        local function Cooldownsef()\n            --actions.cd_sef=invoke_xuen_the_white_tiger,if=!variable.hold_xuen|fight_remains<25\n            if A.InvokeXuen:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (not VarHoldXuen or Player:AreaTTD(10) < 25) then\n                return A.InvokeXuen:Show(icon)\n            end\n            \n            --actions.cd_sef+=/arcane_torrent,if=chi.max-chi>=1\n            if A.ArcaneTorrent:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ArcaneTorrent:Show(icon)\n            end\n            \n            --actions.cd_sef+=/touch_of_death,if=buff.storm_earth_and_fire.down&pet.xuen_the_white_tiger.active|fight_remains<10|fight_remains>180\n            if A.TouchofDeath:IsReady(unit) and ((Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 and A.InvokeXuen:GetSpellTimeSinceLastCast() < 24) or Player:AreaTTD(10) < 10 or (Player:AreaTTD(10) > 180 or Unit(\"target\"):IsDummy())) then\n                return    A.TouchofDeath:Show(icon)\n            end\n            \n            --actions.cd_sef+=/weapons_of_order,if=(raid_event.adds.in>45|raid_event.adds.up)&cooldown.rising_sun_kick.remains<execute_time\n            if A.WeaponsofOrder:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.RisingSunKick:GetCooldown() < Unit(\"target\"):TimeToDieX(15) or Unit(\"target\"):IsDummy()) then\n                return A.WeaponsofOrder:Show(icon)\n            end\n            \n            --actions.cd_sef+=/faeline_stomp,if=combo_strike&(raid_event.adds.in>10|raid_event.adds.up)\n            if A.FaelineStomp:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.FaelineStomp) then\n                return A.FaelineStomp:Show(icon)\n            end\n            \n            --actions.cd_sef+=/fallen_order,if=raid_event.adds.in>30|raid_event.adds.up\n            if A.FallenOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FallenOrder:Show(icon)\n            end\n            \n            --actions.cd_sef+=/bonedust_brew,if=raid_event.adds.in>50|raid_event.adds.up,line_cd=60\n            if A.BonedustBrew:IsReady(unit) and A.BonedustBrew:GetSpellTimeSinceLastCast() > 60 then\n                return A.BonedustBrew:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire_fixate,if=conduit.coordinated_offensive.enabled\n            if A.StormEarthAndFireFixate:IsReady(player) and A.CoordinatedOffensive:IsSoulbindLearned() then\n                return A.StormEarthAndFireFixate:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire,if=cooldown.storm_earth_and_fire.charges=2|fight_remains<20|(raid_event.adds.remains>15|!covenant.kyrian&((cooldown.invoke_xuen_the_white_tiger.remains>cooldown.storm_earth_and_fire.full_recharge_time|variable.hold_xuen))&cooldown.fists_of_fury.remains<=9&chi>=2&cooldown.whirling_dragon_punch.remains<=12)\n            if A.StormEarthAndFire:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and not A.StormEarthAndFireFixate:IsReady(unit) and (A.StormEarthAndFire:GetSpellCharges() == 2 or (Player:AreaTTD(10) < 20 or ((Unit(\"target\"):IsDummy() and (300 - Unit(\"player\"):CombatTime()) < 20))) or (C_Covenants.GetActiveCovenantID() ~= 1) and (((A.InvokeXuen:GetCooldown() > A.StormEarthAndFire:GetSpellChargesFullRechargeTime()) or VarHoldXuen)) and A.FistsofFury:GetCooldown() <= 9 and Player:Chi() >= 2 and A.WhirlingDragonPunch:GetCooldown() <= 12) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire,if=covenant.kyrian&(buff.weapons_of_order.up|(fight_remains<cooldown.weapons_of_order.remains|cooldown.weapons_of_order.remains>cooldown.storm_earth_and_fire.full_recharge_time)&cooldown.fists_of_fury.remains<=9&chi>=2&cooldown.whirling_dragon_punch.remains<=12)\n            if A.StormEarthAndFire:IsReady(unit) and not A.StormEarthAndFireFixate:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (C_Covenants.GetActiveCovenantID() == 1 and (Unit(\"player\"):HasBuffs(A.WeaponsofOrder.ID, true) > 0 or ((Player:AreaTTD(10) < A.WeaponsofOrder:GetCooldown()) or (A.WeaponsofOrder:GetCooldown() > A.StormEarthAndFire:GetSpellChargesFullRechargeTime())) and A.FistsofFury:GetCooldown() <= 9 and Player:Chi() >=2 and A.WhirlingDragonPunch:GetCooldown() <= 12)) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.cd_sef+=/touch_of_karma,if=fight_remains>159|pet.xuen_the_white_tiger.active|variable.hold_xuen\n            if A.TouchofKarma:IsReady(unit) and ((Player:AreaTTD(10) > 159 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or VarHoldXuen) then\n                return A.TouchofKarma:Show(icon)\n            end\n            \n            --actions.cd_sef+=/blood_fury,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<20\n            if A.BloodFury:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 20) then\n                return A.BloodFury:Show(icon)\n            end\n            \n            --actions.cd_sef+=/berserking,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<15\n            if A.Berserking:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 15) then\n                return A.Berserking:Show(icon)\n            end\n            \n            --actions.cd_sef+=/lights_judgment\n            if A.LightsJudgment:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.LightsJudgment:Show(icon)\n            end\n            \n            --actions.cd_sef+=/fireblood,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<10\n            if A.Fireblood:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 10) then\n                return A.Fireblood:Show(icon)\n            end\n            \n            --actions.cd_sef+=/ancestral_call,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<20\n            if A.AncestralCall:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 20) then\n                return A.AncestralCall:Show(icon)\n            end\n            \n            --actions.cd_sef+=/bag_of_tricks,if=buff.storm_earth_and_fire.down\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 then\n                return A.BagofTricks:Show(icon)\n            end\n        end\n        \n        --#############################\n        --##### COOLDOWN SERENITY #####\n        --#############################\n        \n        local function CooldownSerenity()\n            --actions.cd_serenity+=/invoke_xuen_the_white_tiger,if=!variable.hold_xuen|fight_remains<25\n            if A.InvokeXuen:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (not VarHoldXuen or Player:AreaTTD(10) < 25) then\n                return A.InvokeXuen:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.cd_serenity+=/blood_fury,if=variable.serenity_burst\n            if A.BloodFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.BloodFury:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/berserking,if=variable.serenity_burst\n            if A.Berserking:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.Berserking:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/arcane_torrent,if=chi.max-chi>=1\n            if A.ArcaneTorrent:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ArcaneTorrent:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/lights_judgment\n            if A.LightsJudgment:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.LightsJudgment:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/fireblood,if=variable.serenity_burst\n            if A.Fireblood:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.Fireblood:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/ancestral_call,if=variable.serenity_burst\n            if A.AncestralCall:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.AncestralCall:Show(icon)\n            end    \n            \n            --actions.cd_serenity+=/bag_of_tricks,if=variable.serenity_burst\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.BagofTricks:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/touch_of_death,if=fight_remains>180|pet.xuen_the_white_tiger.active|fight_remains<10\n            if A.TouchofDeath:IsReady(unit) and ((Player:AreaTTD(10) > 180 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) < 10) then\n                return A.TouchofDeath:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/touch_of_karma,if=fight_remains>90|pet.xuen_the_white_tiger.active|fight_remains<10\n            if A.TouchofKarma:IsReady(unit) and ((Player:AreaTTD(10) > 90 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) < 10) then\n                return A.TouchofKarma:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/weapons_of_order,if=cooldown.rising_sun_kick.remains<execute_time\n            if A.WeaponsofOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((A.RisingSunKick:GetCooldown() < Unit(\"target\"):TimeToDieX(15)) or Unit(\"target\"):IsDummy()) then\n                return A.WeaponsofOrder:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/faeline_stomp\n            if A.FaelineStomp:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FaelineStomp:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/fallen_order\n            if A.FallenOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FallenOrder:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/bonedust_brew\n            if A.BonedustBrew:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.BonedustBrew:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/serenity,if=cooldown.rising_sun_kick.remains<2|fight_remains<15\n            if A.Serenity:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.RisingSunKick:GetCooldown() < 2 or Player:AreaTTD(10) < 15) then\n                return A.Serenity:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/bag_of_tricks\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then \n                return A.BagofTricks:Show(icon)\n            end\n        end\n        \n        --#####################\n        --###### WEAPONS ######\n        --#####################\n        local function WeaponsRotation()\n            \n            --actions.weapons_of_order=call_action_list,name=cd_sef,if=!talent.serenity\n            if not A.Serenity:IsTalentLearned() and Cooldownsef() then\n                return true\n            end\n            \n            --actions.weapons_of_order+=/call_action_list,name=cd_serenity,if=talent.serenity\n            if A.Serenity:IsTalentLearned() and CooldownSerenity() then\n                return true\n            end\n            \n            --actions.weapons_of_order+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>3\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 2 and Player:EnergyTimeToMaxPredicted() > 3 then\n                return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains\n            if A.RisingSunKick:IsReady(unit) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fists_of_fury,if=active_enemies>=2&buff.weapons_of_order_ww.remains<1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 2) >= 2 and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) < 1 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/whirling_dragon_punch,if=active_enemies>=2\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 2) >= 2 then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=combo_strike&active_enemies>=3&buff.weapons_of_order_ww.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and MultiUnits:GetByRange(10, 3) >= 3 and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&active_enemies<=2\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and MultiUnits:GetByRange(10, 2) <= 2 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/whirling_dragon_punch\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fists_of_fury,interrupt=1,if=buff.storm_earth_and_fire.up&raid_event.adds.in>cooldown.fists_of_fury.duration*0.6\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FistsofFury:GetSpellTimeSinceLastCast() < 1 and Unit(player):HasBuffs(A.WeaponsofOrder.ID, true) > 0 and Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) > 0 then\n                return A.StopCast:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=buff.chi_energy.stack>30-5*active_enemies\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > (30 - (5 * (MultiUnits:GetByRange(10, 6)))) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/chi_burst,if=chi.max-chi>=(1+active_enemies>1)\n            if A.ChiBurst:IsReady(player) and Player:ChiDeficit() >= (1 + MultiUnits:GetByRange(10, 6)) and not IsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=(!talent.hit_combo|combo_strike)&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and (not A.HitCombo:IsTalentLearned() or ComboStrike(A.TigerPalm)) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/chi_wave\n            if A.ChiWave:IsReady(unit) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=chi>=3|buff.weapons_of_order_ww.up\n            if A.BlackoutKick:IsReady(unit) and (Player:Chi() >= 3 or Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/flying_serpent_kick,interrupt=1\n            if target and Unit(\"target\"):GetRange() <= 8 and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and A.FlyingSerpentKick:IsReady(target, true) and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then \n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for Kick\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n        end\n        \n        --#####################\n        --######## ST #########\n        --#####################\n        local function STRotation()\n            --actions.st=whirling_dragon_punch,if=raid_event.adds.in>cooldown.whirling_dragon_punch.duration*0.8|raid_event.adds.up\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            if A.StormEarthAndFire:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Action.GetToggle(2, \"SEFOutBurst\") and A.StormEarthAndFire:GetSpellCharges() == 2 and Player:AreaTTD(10) > 15 then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            if A.StormEarthAndFireFixate:IsReady(player) and A.CoordinatedOffensive:IsSoulbindLearned() then\n                return A.StormEarthAndFireFixate:Show(icon)\n            end\n            \n            --actions.st+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>3|chi.max-chi>=4&(energy.time_to_max>2|!prev_gcd.1.tiger_palm)\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((Player:ChiDeficit() >= 2 and Player:EnergyTimeToMaxPredicted() > 3) or (Player:ChiDeficit() >= 4 and (Player:EnergyTimeToMaxPredicted() > 2 or not Player:PrevGCD(1, A.TigerPalm))))\n            then return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.st+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up&(raid_event.adds.in>buff.dance_of_chiji.remains-2|raid_event.adds.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.st+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=cooldown.serenity.remains>1|!talent.serenity\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) and (A.Serenity:GetCooldown() > 1 or not A.Serenity:IsTalentLearned()) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.st+=/fists_of_fury,if=(raid_event.adds.in>cooldown.fists_of_fury.duration*0.8|raid_event.adds.up)&(energy.time_to_max>execute_time-1|chi.max-chi<=1|buff.storm_earth_and_fire.remains<execute_time+1)|fight_remains<execute_time+1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(unit):GetRange() <= 8) and ((Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1)) or Player:ChiDeficit() <= 1 or ((Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) < (Unit(\"target\"):TimeToDieX(15) + 1)) or Unit(\"target\"):IsDummy()) or (Player:AreaTTD(10) < (Unit(\"target\"):TimeToDieX(15) + 1) or Unit(\"target\"):IsDummy())) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.st+=/crackling_jade_lightning,if=buff.the_emperors_capacitor.stack>19&energy.time_to_max>execute_time-1&cooldown.rising_sun_kick.remains>execute_time|buff.the_emperors_capacitor.stack>14&(cooldown.serenity.remains<5&talent.serenity|cooldown.weapons_of_order.remains<5&covenant.kyrian|fight_remains<5)\n            if A.CracklingJadeLightning:IsReady(unit) and (Unit(player):HasBuffsStacks(A.EmperorsCapacitorStack.ID, true) > 19 and Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1) and (A.RisingSunKick:GetCooldown() > Unit(\"target\"):TimeToDieX(15))) or (Unit(player):HasBuffsStacks(A.EmperorsCapacitorStack.ID, true) > 19 and ((A.Serenity:GetCooldown() < 5 and A.Serenity:IsTalentLearned()) or (A.WeaponsofOrder:GetCooldown() < 5 and C_Covenants.GetActiveCovenantID() == 1) or (Player:AreaTTD() < 5))) then\n                return A.CracklingJadeLightning:Show(icon)\n            end\n            \n            --actions.st+=/rushing_jade_wind,if=buff.rushing_jade_wind.down&active_enemies>1\n            if A.RushingJadeWind:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(player):HasBuffs(A.RushingJadeWind.ID, true) == 0 and MultiUnits:GetByRange(10, 2) > 1 then\n                return A.RushingJadeWind:Show(icon)\n            end\n            \n            --actions.st+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.st+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.st+=/chi_burst,if=chi.max-chi>=1&active_enemies=1&raid_event.adds.in>20|chi.max-chi>=2&active_enemies>=2\n            if A.ChiBurst:IsReady(player) and ((Player:ChiDeficit() >= 1 and MultiUnits:GetByRange(10, 3) == 1) or (Player:ChiDeficit() >= 2 and MultiUnits:GetByRange(10, 3) >= 2)) and not IsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.st+=/chi_wave\n            if A.ChiWave:IsReady(unit) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.st+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2&buff.storm_earth_and_fire.down\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 and Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.st+=/spinning_crane_kick,if=buff.chi_energy.stack>30-5*active_enemies&buff.storm_earth_and_fire.down&(cooldown.rising_sun_kick.remains>2&cooldown.fists_of_fury.remains>2|cooldown.rising_sun_kick.remains<3&cooldown.fists_of_fury.remains>3&chi>3|cooldown.rising_sun_kick.remains>3&cooldown.fists_of_fury.remains<3&chi>4|chi.max-chi<=1&energy.time_to_max<2)|buff.chi_energy.stack>10&fight_remains<7\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > (30 - (5 * (MultiUnits:GetByRange(10, 6)))) and Unit(player):HasBuffs(A.StormEarthandFire.ID, true) == 0 and ((A.RisingSunKick:GetCooldown() > 2 and A.FistsofFury:GetCooldown() > 2) or (A.RisingSunKick:GetCooldown() < 3 and A.FistsofFury:GetCooldown() > 3 and Player:Chi() > 3) or (A.RisingSunKick:GetCooldown() > 3 and A.FistsofFury:GetCooldown() < 3 and Player:Chi() > 4) or (Player:ChiDeficit() <= 1 and Player:EnergyTimeToMaxPredicted() < 2)) or (Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > 10 and Player:AreaTTD(10) < 7)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&(talent.serenity&cooldown.serenity.remains<3|cooldown.rising_sun_kick.remains>1&cooldown.fists_of_fury.remains>1|cooldown.rising_sun_kick.remains<3&cooldown.fists_of_fury.remains>3&chi>2|cooldown.rising_sun_kick.remains>3&cooldown.fists_of_fury.remains<3&chi>3|chi>5|buff.bok_proc.up)\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and ((A.Serenity:IsTalentLearned() and A.Serenity:GetCooldown() < 3) or (A.RisingSunKick:GetCooldown() > 1 and A.FistsofFury:GetCooldown() > 1) or (A.RisingSunKick:GetCooldown() < 3 and A.FistsofFury:GetCooldown() > 3 and Player:Chi() > 2) or (A.RisingSunKick:GetCooldown() > 3 and A.FistsofFury:GetCooldown() < 3 and Player:Chi() > 3) or (Player:Chi() > 5) or (Unit(\"player\"):HasBuffs(A.BlackoutKickBuff.ID, true) > 0)) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.st+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.st+=/flying_serpent_kick,interrupt=1\n            if A.FlyingSerpentKick:IsReady(player) and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and Unit(\"target\"):GetRange() <= 8 and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then \n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&cooldown.fists_of_fury.remains<3&chi=2&prev_gcd.1.tiger_palm&energy.time_to_50<1\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and A.FistsofFury:GetCooldown() < 3 and Player:Chi() == 2 and Player:PrevGCD(1, A.TigerPalm) and Player:EnergyTimeToX(50) < 1 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&energy.time_to_max<2&(chi.max-chi<=1|prev_gcd.1.tiger_palm)\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and Player:EnergyTimeToMaxPredicted() < 2 and (Player:ChiDeficit() <= 1 or Player:PrevGCD(1, A.TigerPalm)) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n        end\n        \n        --#####################\n        --###### GENERIC ######\n        --#####################\n        \n        --actions=auto_attack\n        \n        --actions+=/spear_hand_strike,if=target.debuff.casting.react        \n        local Interrupt = Interrupts(unit)\n        if Interrupt then \n            return Interrupt:Show(icon)\n        end    \n        \n        --actions+=/potion,if=(buff.serenity.up|buff.storm_earth_and_fire.up)&pet.xuen_the_white_tiger.active|fight_remains<=60\n        --if A.PotionofSpectralAgility:IsReady(player) and Action.GetToggle(1, \"Potion\") and IsItemInRange(32321) and ((Unit(player):HasBuffs(A.Serenity.ID, true) > 0 or Unit(player):HasBuffs(A.StormEarthandFire.ID, true) > 0) and (A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) <= 60))\n        --then\n        -- Notification                    \n        --    A.Toaster:SpawnByTimer(\"TripToast\", 0, \"Combat Potion!\", \"Using Combat Potion!\", A.PotionofSpectralAgility.ID)  \n        --    return A.PotionofSpectralAgility:Show(icon)\n        --end\n        --actions+=/call_action_list,name=serenity,if=buff.serenity.up\n        if Unit(\"player\"):HasBuffs(A.Serenity.ID, true) > 0 and SerenityRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=weapons_of_order,if=buff.weapons_of_order.up\n        if Unit(\"player\"):HasBuffs(A.WeaponsofOrder.ID, true) > 0 and WeaponsRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=opener,if=time<4&chi<5&!pet.xuen_the_white_tiger.active\n        if Unit(player):CombatTime() < 4 and Player:Chi() < 5 and A.InvokeXuen:GetSpellTimeSinceLastCast() > 24 and OpenerRotation() then\n            return true\n        end\n        \n        --actions+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3&(energy.time_to_max<1|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 and (Player:EnergyTimeToMaxPredicted() < 1 or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or (A.WeaponsofOrder:GetCooldown() < 2))  then\n            return A.FistoftheWhiteTiger:Show(icon)\n        end\n        \n        --actions+=/expel_harm,if=chi.max-chi>=1&(energy.time_to_max<1|cooldown.serenity.remains<2|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (Player:ChiDeficit() >= 1 and (Player:EnergyTimeToMaxPredicted() < 1 or (A.Serenity:GetCooldown() < 2 and A.Serenity:IsTalentLearned()) or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or A.WeaponsofOrder:GetCooldown() <2)) then\n            return A.ExpelHarm:Show(icon)\n        end\n        \n        --actions+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&chi.max-chi>=2&(energy.time_to_max<1|cooldown.serenity.remains<2|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 and (Player:EnergyTimeToMaxPredicted() < 1 or (A.Serenity:GetCooldown() < 2 and A.Serenity:IsTalentLearned()) or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or (A.WeaponsofOrder:GetCooldown() < 2)) then\n            return A.TigerPalm:Show(icon)\n        end\n        \n        --actions+=/call_action_list,name=cd_sef,if=!talent.serenity\n        if A.BurstIsON(unit) and not A.Serenity:IsTalentLearned() and Cooldownsef() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=cd_serenity,if=talent.serenity\n        if A.BurstIsON(unit) and A.Serenity:IsTalentLearned() and CooldownSerenity() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=st,if=active_enemies<3\n        if MultiUnits:GetByRange(10, 3) < 3 and STRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=aoe,if=active_enemies>=3\n        if MultiUnits:GetByRange(10, 3) >= 3 and AoERotation() then\n            return true\n        end\n        \n    end\n    --Finished Enemy Rotation\n    -- Defensive\n    local SelfDefensive = SelfDefensives()\n    if SelfDefensive then \n        return SelfDefensive:Show(icon)\n    end \n    \n    -- Mouseover\n    if A.IsUnitEnemy(\"mouseover\") then\n        unit = \"mouseover\"\n        if EnemyRotation(unit) then \n            return true \n        end \n    end \n    \n    -- Target  \n    if A.IsUnitEnemy(\"target\") then \n        unit = \"target\"\n        if EnemyRotation(unit) then \n            return true\n        end       \n    end\nend\n\n--Finished",
+					["Code"] = "--######################################\n--####### AYA'S WINDWALKER MONK ########\n--######################################\n\nlocal _G, setmetatable                           = _G, setmetatable\nlocal ACTION                                    = _G.Action\nlocal Covenant                                    = _G.LibStub(\"Covenant\")\nlocal TMW                                     = _G.TMW \nlocal Action                                 = _G.Action\nlocal CONST                                 = Action.Const\nlocal Listener                                 = Action.Listener\nlocal Create                                 = Action.Create\nlocal GetToggle                                = Action.GetToggle\nlocal SetToggle                                = Action.SetToggle\nlocal GetLatency                            = Action.GetLatency\nlocal GetGCD                                = Action.GetGCD\nlocal GetCurrentGCD                            = Action.GetCurrentGCD\nlocal ShouldStop                            = Action.ShouldStop\nlocal BurstIsON                                = Action.BurstIsON\nlocal AuraIsValid                            = Action.AuraIsValid\nlocal InterruptIsValid                        = Action.InterruptIsValid\nlocal FrameHasSpell                            = Action.FrameHasSpell\nlocal DetermineUsableObject                    = Action.DetermineUsableObject\n\nlocal Utils                                    = Action.Utils\nlocal BossMods                                = Action.BossMods\nlocal TeamCache                                = Action.TeamCache\nlocal EnemyTeam                                = Action.EnemyTeam\nlocal FriendlyTeam                            = Action.FriendlyTeam\nlocal LoC                                     = Action.LossOfControl\nlocal Player                                = Action.Player \nlocal MultiUnits                            = Action.MultiUnits\nlocal UnitCooldown                            = Action.UnitCooldown\nlocal Unit                                    = Action.Unit \nlocal IsUnitEnemy                            = Action.IsUnitEnemy\nlocal IsUnitFriendly                        = Action.IsUnitFriendly\nlocal ActiveUnitPlates                          = MultiUnits:GetActiveUnitPlates()\nlocal IsIndoors, UnitIsUnit, UnitIsPlayer       = IsIndoors, UnitIsUnit, UnitIsPlayer\nlocal pairs                                     = pairs\nlocal GrappleWeaponIsReady                    = Action.GrappleWeaponIsReady\n\nlocal Azerite                                 = LibStub(\"AzeriteTraits\")\n\nlocal ACTION_CONST_MONK_WINDWALKER            = CONST.MONK_WINDWALKER\nlocal ACTION_CONST_AUTOTARGET                = CONST.AUTOTARGET\nlocal ACTION_CONST_SPELLID_FREEZING_TRAP    = CONST.SPELLID_FREEZING_TRAP\n\n--For Toaster\nlocal Toaster                                    = _G.Toaster\nlocal GetSpellTexture                             = _G.TMW.GetSpellTexture\n\n--- ============================ CONTENT ===========================\n--- ======= APL LOCALS =======\n-- luacheck: max_line_length 9999\n\nAction[ACTION_CONST_MONK_WINDWALKER] = {\n    -- Racial\n    ArcaneTorrent                    = Action.Create({ Type = \"Spell\", ID = 50613    }),\n    BloodFury                        = Action.Create({ Type = \"Spell\", ID = 20572    }),\n    Fireblood                        = Action.Create({ Type = \"Spell\", ID = 265221   }),\n    AncestralCall                    = Action.Create({ Type = \"Spell\", ID = 274738   }),\n    Berserking                        = Action.Create({ Type = \"Spell\", ID = 26297    }),\n    ArcanePulse                        = Action.Create({ Type = \"Spell\", ID = 260364   }),\n    QuakingPalm                        = Action.Create({ Type = \"Spell\", ID = 107079   }),\n    Haymaker                        = Action.Create({ Type = \"Spell\", ID = 287712   }), \n    WarStomp                        = Action.Create({ Type = \"Spell\", ID = 20549    }),\n    BullRush                        = Action.Create({ Type = \"Spell\", ID = 255654   }),  \n    GiftofNaaru                        = Action.Create({ Type = \"Spell\", ID = 59544    }),\n    Shadowmeld                        = Action.Create({ Type = \"Spell\", ID = 58984    }), \n    Stoneform                        = Action.Create({ Type = \"Spell\", ID = 20594    }), \n    BagofTricks                        = Action.Create({ Type = \"Spell\", ID = 312411    }),\n    WilloftheForsaken                = Action.Create({ Type = \"Spell\", ID = 7744        }),   \n    EscapeArtist                    = Action.Create({ Type = \"Spell\", ID = 20589    }), \n    EveryManforHimself                = Action.Create({ Type = \"Spell\", ID = 59752    }), \n    LightsJudgment                    = Action.Create({ Type = \"Spell\", ID = 255647    }),\n    RocketJump                        = Action.Create({ Type = \"Spell\", ID = 69070    }),\n    DarkFlight                        = Action.Create({ Type = \"Spell\", ID = 68992    }),\n    \n    -- Monk General\n    BlackoutKick                    = Action.Create({ Type = \"Spell\", ID = 100784    }),\n    CracklingJadeLightning          = Action.Create({ Type = \"Spell\", ID = 117952    }),    \n    Detox                             = Action.Create({ Type = \"Spell\", ID = 218164    }),    \n    ExpelHarm                        = Action.Create({ Type = \"Spell\", ID = 322101    }),\n    FortifyingBrew                  = Action.Create({ Type = \"Spell\", ID = 243435    }),    \n    LegSweep                        = Action.Create({ Type = \"Spell\", ID = 119381    }),\n    MarkoftheCrane                  = Action.Create({ Type = \"Spell\", ID = 228287    }),    \n    MysticTouch                       = Action.Create({ Type = \"Spell\", ID = 8647, Hidden = true         }),\n    Paralysis                        = Action.Create({ Type = \"Spell\", ID = 344359    }),\n    Provoke                            = Action.Create({ Type = \"Spell\", ID = 115546    }),\n    Resuscitate                        = Action.Create({ Type = \"Spell\", ID = 115178    }),    \n    Roll                            = Action.Create({ Type = \"Spell\", ID = 109132    }),    \n    SpinningCraneKick               = Action.Create({ Type = \"Spell\", ID = 101546    }),\n    TigerPalm                        = Action.Create({ Type = \"Spell\", ID = 100780    }),\n    RushingTigerPalm                = Action.Create({ Type = \"Spell\", ID = 337341    }),\n    TouchofDeath                       = Action.Create({ Type = \"Spell\", ID = 325215    }),\n    Transcendence                   = Action.Create({ Type = \"Spell\", ID = 101649    }),\n    TranscendenceTransfer           = Action.Create({ Type = \"Spell\", ID = 119996    }),\n    Vivify                           = Action.Create({ Type = \"Spell\", ID = 116670    }),\n    ZenFlight                       = Action.Create({ Type = \"Spell\", ID = 125883    }),\n    ZenPilgrimage                      = Action.Create({ Type = \"Spell\", ID = 126892    }),\n    \n    -- WindWalker Specific\n    Disable                           = Action.Create({ Type = \"Spell\", ID = 116095    }),\n    FistsofFury                       = Action.Create({ Type = \"Spell\", ID = 113656    }),\n    FlyingSerpentKick               = Action.Create({ Type = \"Spell\", ID = 344487    }),\n    FlyingSerpentKickJump           = Action.Create({ Type = \"Spell\", ID = 115057    }), -- Action ID of FlyingSerpentKick\n    InvokeXuen                       = Action.Create({ Type = \"Spell\", ID = 323999    }),\n    RisingSunKick                   = Action.Create({ Type = \"Spell\", ID = 107428    }),\n    SpearHandStrike                   = Action.Create({ Type = \"Spell\", ID = 116705    }),\n    StormEarthAndFire               = Action.Create({ Type = \"Spell\", ID = 137639              }), \n    StormEarthAndFireFixate         = Action.Create({ Type = \"Spell\", ID = 221771           }), -- while StormEarthAndFire buff\n    TouchofKarma                       = Action.Create({ Type = \"Spell\", ID = 122470    }),\n    SpinningCraneKick               = Action.Create({ Type = \"Spell\", ID = 101546    }),\n    Afterlife                        = Action.Create({ Type = \"Spell\", ID = 116092, Hidden = true        }),\n    MasteryComboStrikes             = Action.Create({ Type = \"Spell\", ID = 115636, Hidden = true        }),\n    Windwalking                        = Action.Create({ Type = \"Spell\", ID = 157411, Hidden = true        }),\n    \n    --Other\n    BlessingofKings                  = Action.Create({ Type = \"Spell\", ID = 58054    }),\n    MortalWoundsDebuff                = Action.Create({ Type = \"Spell\", ID = 115804   }),\n    StopCast                        = Action.Create({ Type = \"Spell\", ID = 61721, Hidden = true           }),\n    \n    --Hidden\n    BlackoutKickBuff                = Action.Create({ Type = \"Spell\", ID = 116768, Hidden = true  }),\n    \n    \n    \n    -- Normal Talents\n    EyeoftheTiger                   = Action.Create({ Type = \"Spell\", ID = 196607, Hidden = true    }),\n    ChiWave                            = Action.Create({ Type = \"Spell\", ID = 115098    }),\n    ChiBurst                        = Action.Create({ Type = \"Spell\", ID = 123986    }),\n    Celerity                           = Action.Create({ Type = \"Spell\", ID = 115173, Hidden = true    }),\n    ChiTorpedo                      = Action.Create({ Type = \"Spell\", ID = 115008    }),\n    TigersLust                        = Action.Create({ Type = \"Spell\", ID = 116841    }),\n    Ascension                        = Action.Create({ Type = \"Spell\", ID = 115396, Hidden = true    }),\n    FistoftheWhiteTiger             = Action.Create({ Type = \"Spell\", ID = 261947    }),\n    EnergizingElixir                = Action.Create({ Type = \"Spell\", ID = 115288    }),\n    TigerTailSweep                  = Action.Create({ Type = \"Spell\", ID = 264348, Hidden = true    }),\n    GoodKarma                        = Action.Create({ Type = \"Spell\", ID = 280195, Hidden = true    }),\n    RingofPeace                        = Action.Create({ Type = \"Spell\", ID = 116844    }),\n    InnerStrength                   = Action.Create({ Type = \"Spell\", ID = 261767, Hidden = true    }),\n    DiffuseMagic                    = Action.Create({ Type = \"Spell\", ID = 122783    }),\n    DampenHarm                      = Action.Create({ Type = \"Spell\", ID = 122278    }),\n    HitCombo                        = Action.Create({ Type = \"Spell\", ID = 196740, Hidden = true    }),    \n    RushingJadeWind                 = Action.Create({ Type = \"Spell\", ID = 116847    }),\n    DanceofChiJi                    = Action.Create({ Type = \"Spell\", ID = 325201, Hidden = true    }),\n    SpiritualFocus                  = Action.Create({ Type = \"Spell\", ID = 280197, Hidden = true    }),\n    WhirlingDragonPunch             = Action.Create({ Type = \"Spell\", ID = 152175    }),\n    Serenity                        = Action.Create({ Type = \"Spell\", ID = 152173    }),\n    \n    \n    -- PvP Talents\n    RidetheWind                    = Action.Create({ Type = \"Spell\", ID = 201372, Hidden = true    }),\n    TigereyeBrew                    = Action.Create({ Type = \"Spell\", ID = 247483    }),\n    ReverseHarm                    = Action.Create({ Type = \"Spell\", ID = 342928, Hidden = true    }),\n    DisablingReach                        = Action.Create({ Type = \"Spell\", ID = 201769, Hidden = true    }),\n    GrappleWeapon                = Action.Create({ Type = \"Spell\", ID = 233759    }),\n    AlphaTiger                    = Action.Create({ Type = \"Spell\", ID = 287503, Hidden = true    }),\n    WindWaker                    = Action.Create({ Type = \"Spell\", ID = 287506, Hidden = true    }),\n    PressurePoints                = Action.Create({ Type = \"Spell\", ID = 345829, Hidden = true    }),    \n    TurboFists                = Action.Create({ Type = \"Spell\", ID = 287681, Hidden = true    }),\n    \n    \n    -- Covenant Abilities\n    SummonSteward                    = Action.Create({ Type = \"Spell\", ID = 324739    }),\n    DoorofShadows                    = Action.Create({ Type = \"Spell\", ID = 300728    }),\n    Fleshcraft                        = Action.Create({ Type = \"Spell\", ID = 321687    }),\n    Fleshcraftshield                  = Action.Create({ Type = \"Spell\", ID = 324867    }),\n    Soulshape                        = Action.Create({ Type = \"Spell\", ID = 310143    }),\n    WeaponsofOrder                = Action.Create({ Type = \"Spell\", ID = 310454    }),\n    WeaponsofOrderWW                =Action.Create({ Type = \"Spell\", ID = 311054, Hidden = true    }),\n    BonedustBrew                    = Action.Create({ Type = \"Spell\", ID = 325216    }),\n    DeathsDue                        = Action.Create({ Type = \"Spell\", ID = 324128    }),  \n    FaelineStomp                        = Action.Create({ Type = \"Spell\", ID = 327104    }),\n    FallenOrder                        = Action.Create({ Type = \"Spell\", ID = 326860    }),       \n    \n    \n    -- Conduits\n    CoordinatedOffensive            = Action.Create({ Type = \"Spell\", ID = 336598, Hidden = true    }),\n    \n    \n    -- Legendaries\n    -- General Legendaries\n    DeathsEmbrace                    = Action.Create({ Type = \"Spell\", ID = 334728, Hidden = true    }),\n    EmperorsCapacitorStack              = Action.Create({ Type = \"Spell\", ID = 337291   }),\n    ChiEnergy                              = Action.Create({ Type = \"Spell\", ID = 337571    }),\n    \n    \n    --Wind Walker Legendaries\n    DeadliestCoil                    = Action.Create({ Type = \"Spell\", ID = 334949, Hidden = true    }),\n    \n    \n    --Anima Powers - to add later...\n    \n    \n    -- Trinkets\n    DreadFireVessel            = Create({ Type = \"Trinket\", ID = 6805 }),   \n    \n    \n    -- Potions\n    PotionofUnbridledFury            = Action.Create({ Type = \"Potion\", ID = 169299, QueueForbidden = true }),     \n    SuperiorPotionofUnbridledFury    = Action.Create({ Type = \"Potion\", ID = 168489, QueueForbidden = true }),\n    PotionofSpectralStrength        = Action.Create({ Type = \"Potion\", ID = 171275, QueueForbidden = true }),\n    PotionofSpectralAgility      = Action.Create({ Type = \"Potion\", ID = 171270, QueueForbidden = true }),\n    PotionofSpectralStamina            = Action.Create({ Type = \"Potion\", ID = 171274, QueueForbidden = true }),\n    PotionofEmpoweredExorcisms        = Action.Create({ Type = \"Potion\", ID = 171352, QueueForbidden = true }),\n    PotionofHardenedShadows            = Action.Create({ Type = \"Potion\", ID = 171271, QueueForbidden = true }),\n    PotionofPhantomFire                = Action.Create({ Type = \"Potion\", ID = 171349, QueueForbidden = true }),\n    PotionofDeathlyFixation            = Action.Create({ Type = \"Potion\", ID = 171351, QueueForbidden = true }),\n    SpiritualHealingPotion            = Action.Create({ Type = \"Potion\", ID = 171267, QueueForbidden = true }),      \n    \n    -- Misc\n    Channeling                      = Action.Create({ Type = \"Spell\", ID = 209274, Hidden = true     }),    -- Show an icon during channeling\n    TargetEnemy                     = Action.Create({ Type = \"Spell\", ID = 44603, Hidden = true     }),    -- Change Target (Tab button)\n    StopCast                        = Action.Create({ Type = \"Spell\", ID = 61721, Hidden = true     }),        -- spell_magic_polymorphrabbit\n    PoolResource                    = Action.Create({ Type = \"Spell\", ID = 209274, Hidden = true     }),\n    Quake                           = Action.Create({ Type = \"Spell\", ID = 240447, Hidden = true     }), -- Quake (Mythic Plus Affix)\n    GCD                          = Action.Create({ Type = \"Spell\", ID = 61304, Hidden = true     }),   \n}\n\n\nlocal A = setmetatable(Action[ACTION_CONST_MONK_WINDWALKER], { __index = Action })\n\nlocal player                                 = \"player\"\nlocal PartyUnits\nTMW:RegisterSelfDestructingCallback(\"TMW_ACTION_IS_INITIALIZED_PRE\", function()\n        PartyUnits = GetToggle(2, \"PartyUnits\", ACTION_CONST_MONK_WINDWALKER)\n        return true -- Signal RegisterSelfDestructingCallback to unregister\nend)\n\nlocal function num(val)\n    if val then return 1 else return 0 end\nend\n\nlocal function bool(val)\n    return val ~= 0\nend\nlocal player = \"player\"\n----------------------\n-------- COMMON PREAPL -------\n----------------------\nlocal Temp = {\n    TotalAndPhys                            = {\"TotalImun\", \"DamagePhysImun\"},\n    TotalAndCC                              = {\"TotalImun\", \"CCTotalImun\"},\n    TotalAndPhysKick                        = {\"TotalImun\", \"DamagePhysImun\", \"KickImun\"},\n    TotalAndPhysAndCC                       = {\"TotalImun\", \"DamagePhysImun\", \"CCTotalImun\"},\n    TotalAndPhysAndStun                     = {\"TotalImun\", \"DamagePhysImun\", \"StunImun\"},\n    TotalAndPhysAndCCAndStun                = {\"TotalImun\", \"DamagePhysImun\", \"CCTotalImun\", \"StunImun\"},\n    TotalAndMag                             = {\"TotalImun\", \"DamageMagicImun\"},\n    TotalAndMagKick                         = {\"TotalImun\", \"DamageMagicImun\", \"KickImun\"},\n    DisablePhys                             = {\"TotalImun\", \"DamagePhysImun\", \"Freedom\", \"CCTotalImun\"},\n    DisableMag                              = {\"TotalImun\", \"DamageMagicImun\", \"Freedom\", \"CCTotalImun\"},\n    IsSlotTrinketBlocked                    = {},\n}; do     \n    \n    -- Push IsSlotTrinketBlocked\n    for key, val in pairs(Action[ACTION_CONST_MONK_WINDWALKER]) do \n        if type(val) == \"table\" and val.Type == \"Trinket\" then \n            Temp.IsSlotTrinketBlocked[val.ID] = true\n        end \n    end \nend \n\nlocal function IsSchoolFree()\n    return LoC:IsMissed(\"SILENCE\") and LoC:Get(\"SCHOOL_INTERRUPT\", \"NATURE\") == 0\nend \n\nlocal IsIndoors, UnitIsUnit, UnitName = IsIndoors, UnitIsUnit, UnitName\n\n--Register Toaster\nToaster:Register(\"TripToast\", function(toast, ...)\n        local title, message, spellID = ...\n        toast:SetTitle(title or \"nil\")\n        toast:SetText(message or \"nil\")\n        if spellID then \n            if type(spellID) ~= \"number\" then \n                error(tostring(spellID) .. \" (spellID) is not a number for TripToast!\")\n                toast:SetIconTexture(\"Interface\\FriendsFrame\\Battlenet-WoWicon\")\n            else \n                toast:SetIconTexture((GetSpellTexture(spellID)))\n            end \n        else \n            toast:SetIconTexture(\"Interface\\FriendsFrame\\Battlenet-WoWicon\")\n        end \n        toast:SetUrgencyLevel(\"normal\") \nend)\n\nfunction Player:AreaTTD(range)\n    local ttdtotal = 0\n    local totalunits = 0\n    local r = range\n    \n    for _, unitID in pairs(ActiveUnitPlates) do \n        if Unit(unitID):GetRange() <= r then \n            local ttd = Unit(unitID):TimeToDie()\n            totalunits = totalunits + 1\n            ttdtotal = ttd + ttdtotal\n        end\n    end\n    \n    if totalunits == 0 then\n        return 0\n    end\n    \n    return ttdtotal / totalunits\nend    \n\nlocal function InMelee(unit)\n    -- @return boolean \n    return A.TigerPalm:IsInRange(unit)\nend \n\nlocal function GetByRange(count, range, isCheckEqual, isCheckCombat)\n    -- @return boolean \n    local c = 0 \n    for unit in pairs(ActiveUnitPlates) do \n        if (not isCheckEqual or not UnitIsUnit(\"target\", unit)) and (not isCheckCombat or Unit(unit):CombatTime() > 0) then \n            if InMelee(unit) then \n                c = c + 1\n            elseif range then \n                local r = Unit(unit):GetRange()\n                if r > 0 and r <= range then \n                    c = c + 1\n                end \n            end \n            \n            if c >= count then \n                return true \n            end \n        end \n    end\nend \nGetByRange = A.MakeFunctionCachedDynamic(GetByRange)\n\n-- Non GCD spell check\nlocal function countInterruptGCD(unit)\n    if not A.LegSweep:IsReadyByPassCastGCD(unit) or not A.LegSweep:AbsentImun(unit, Temp.TotalAndPhysKick, true) then \n        return true \n    end \nend \n\n--Work around fix for AoE off breaking\nif UseAoE == true\nthen AoETargets = Action.GetToggle(2,\"AoETargets\")\nelse AoETargets = 10\nend\n\n-- Interrupts spells\nlocal function Interrupts(unit)\n    isInterrupt = select(9,UnitCastingInfo(\"target\"));\n    local LegSweepInterrupt = Action.GetToggle(2, \"LegSweepInterrupt\")\n    local ParalysisInterrupt = Action.GetToggle(2, \"ParalysisInterrupt\")\n    \n    if not A.GetToggle(2, \"InterruptsRyan\") and (IsInRaid() or A.InstanceInfo.KeyStone > 1) --uses ryan interrupt table in SL dungeons and raid instance IDs\n    then\n        useKick, useCC, useRacial, notKickAble, castRemainsTime, castDoneTime = Action.InterruptIsValid(unit, \"RyanInterrupts\", true, countInterruptGCD(unit))\n    else \n        useKick, useCC, useRacial, notInterruptable, castRemainsTime, castDoneTime = Action.InterruptIsValid(unit, nil, nil, countInterruptGCD(unit))\n    end \n    \n    if castRemainsTime >= A.GetLatency() then\n        -- Spear Hand Strike\n        if useKick and not notInterruptable and A.SpearHandStrike:IsReady(unit) then \n            return A.SpearHandStrike\n        end\n        \n        -- Paralysis\n        if A.Paralysis:IsReady(unit) and ParalysisInterrupt and A.SpearHandStrike:GetCooldown() > 1 and useCC then \n            return A.Paralysis\n        end \n        \n        -- LegSweep\n        if A.LegSweep:IsReady(unit) and LegSweepInterrupt and A.SpearHandStrike:GetCooldown() > 1 and useCC then \n            return A.LegSweep\n        end \n        \n        if useRacial and A.QuakingPalm:AutoRacial(unit) then \n            return A.QuakingPalm\n        end \n        \n        if useRacial and A.Haymaker:AutoRacial(unit) then \n            return A.Haymaker\n        end \n        \n        if useRacial and A.WarStomp:AutoRacial(unit) then \n            return A.WarStomp\n        end \n        \n        if useRacial and A.BullRush:AutoRacial(unit) then \n            return A.BullRush\n        end \n    end\nend\n\nlocal function SelfDefensives(unit)\n    -- TouchofKarma\n    local TouchofKarma = GetToggle(2, \"TouchofKarma\")\n    if TouchofKarma >= 0 then \n        local unit\n        if IsUnitEnemy(\"mouseover\") then \n            unit = \"mouseover\"\n        elseif IsUnitEnemy(\"target\") then \n            unit = \"target\"\n        end     \n        \n        if unit and A.TouchofKarma:IsReady(unit) and A.TouchofKarma:AbsentImun(unit, Temp.TotalAndPhys, true) then \n            if     (\n                -- Auto \n                (\n                    TouchofKarma >= 100 and \n                    (\n                        Unit(player):TimeToDieX(30) < 2.5 or \n                        (\n                            A.IsInPvP and \n                            Unit(player):HealthPercent() < 70 and \n                            Unit(player):IsFocused(nil, true) \n                        )\n                    )\n                ) or \n                -- Custom \n                (\n                    TouchofKarma < 100 and \n                    Unit(player):HealthPercent() < TouchofKarma\n                )\n            ) and \n            (\n                Unit(player):HasBuffs(\"DeffBuffs\", true) == 0 or \n                Unit(player):HealthPercent() < 20\n            )\n            then \n                return A.TouchofKarma\n            end \n        end \n    end \n    \n    -- DampenHarm\n    local DampenHarm = GetToggle(2, \"DampenHarm\")\n    if     DampenHarm >= 0 and A.DampenHarm:IsReady(player) and \n    (\n        (     -- Auto \n            DampenHarm >= 100 and \n            (\n                -- HP lose per sec >= 20\n                Unit(player):GetDMG() * 100 / Unit(player):HealthMax() >= 20 or \n                Unit(player):GetRealTimeDMG() >= Unit(player):HealthMax() * 0.20 or \n                -- TTD \n                Unit(player):TimeToDieX(25) < 5 or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused() \n                        )\n                    )\n                )\n            ) and \n            Unit(player):HasBuffs(\"DeffBuffs\", true) == 0\n        ) or \n        (    -- Custom\n            DampenHarm < 100 and \n            Unit(player):HealthPercent() <= DampenHarm\n        )\n    ) \n    then \n        return A.DampenHarm\n    end     \n    \n    -- DiffuseMagic\n    local DiffuseMagic = GetToggle(2, \"DiffuseMagic\")\n    if     DiffuseMagic >= 0 and A.DiffuseMagic:IsReady(player) and \n    (\n        (     -- Auto \n            DiffuseMagic >= 100 and \n            Unit(player):TimeToDieMagicX(35) < 5 and \n            -- Magic Damage still appear\n            Unit(player):GetRealTimeDMG(4) > 0 and \n            Unit(player):HasBuffs(\"DeffBuffsMagic\") == 0\n        ) or \n        (    -- Custom\n            DiffuseMagic < 100 and \n            Unit(player):HealthPercent() <= DiffuseMagic\n        )\n    ) \n    then \n        return A.DiffuseMagic\n    end \n    \n    -- FortifyingBrew\n    local FortifyingBrew = GetToggle(2, \"FortifyingBrew\")\n    if     FortifyingBrew >= 0 and A.FortifyingBrew:IsReady(player) and \n    (\n        (     -- Auto \n            FortifyingBrew >= 100 and \n            (\n                (\n                    not A.IsInPvP and \n                    Unit(player):HealthPercent() < 40 and \n                    Unit(player):TimeToDieX(20) < 6 \n                ) or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused(nil, true)                                 \n                        )\n                    )\n                )\n            ) and \n            Unit(player):HasBuffs(\"DeffBuffs\") == 0\n        ) or \n        (    -- Custom\n            FortifyingBrew < 100 and \n            Unit(player):HealthPercent() <= FortifyingBrew\n        )\n    ) \n    then \n        return A.FortifyingBrew\n    end \n    \n    -- Stoneform (On Deffensive)\n    local Stoneform = GetToggle(2, \"Stoneform\")\n    if     Stoneform >= 0 and A.Stoneform:IsRacialReadyP(player) and \n    (\n        (     -- Auto \n            Stoneform >= 100 and \n            (\n                (\n                    not A.IsInPvP and                         \n                    Unit(player):TimeToDieX(65) < 3 \n                ) or \n                (\n                    A.IsInPvP and \n                    (\n                        Unit(player):UseDeff() or \n                        (\n                            Unit(player, 5):HasFlags() and \n                            Unit(player):GetRealTimeDMG() > 0 and \n                            Unit(player):IsFocused()                                 \n                        )\n                    )\n                )\n            ) \n        ) or \n        (    -- Custom\n            Stoneform < 100 and \n            Unit(player):HealthPercent() <= Stoneform\n        )\n    ) \n    then \n        return A.Stoneform\n    end     \n    \n    -- Stoneform (Self Dispel)\n    if not A.IsInPvP and A.Stoneform:IsRacialReady(player, true) and AuraIsValid(player, \"UseDispel\", \"Dispel\") then \n        return A.Stoneform\n    end\nend \n\n--Fleshcraft\n--local FleshcraftHP = Action.GetToggle(2, \"FleshcraftHP\")\n--local FlashcraftOperator = Action.GetToggle(2, \"FleshcraftOperator\")\n--local FlashcraftTTD = Action.GetToggle(2, \"FleshcraftTTD\")\n--if FleshcraftOperator == \"AND\" and A.Fleshcraft:IsReady(player) and A.Fleshcraft:GetSpellTimeSinceLastCast() > 120 and Unit(player):HealthPercent() <= FleshcraftHP and Unit(player):TimeToDie() <= FlashcraftTTD then\n--    return A.Fleshcraft\n--end\n--if FleshcraftOperator == \"OR\" and A.Fleshcraft:IsReady(player) and A.Fleshcraft:GetSpellTimeSinceLastCast() > 120 and (Unit(player):HealthPercent() <= FleshcraftHP or Unit(player):TimeToDie() <= FlashcraftTTD) then\n--    return A.Fleshcraft\n--end\n\n\nSelfDefensives = A.MakeFunctionCachedDynamic(SelfDefensives)\n\nlocal function GetAttackType()\n    if A.TigereyeBrew:IsSpellLearned() and Unit(player):HasBuffs(A.TigereyeBrew.ID, true, true) > 0 then \n        return Temp.TotalAndMag\n    end  \n    return Temp.TotalAndPhys\nend \n\nlocal function GetAttackTypeForDisable()\n    if A.TigereyeBrew:IsSpellLearned() and Unit(player):HasBuffs(A.TigereyeBrew.ID, true, true) > 0 then \n        return Temp.DisableMag\n    end  \n    return Temp.DisablePhys\nend \n\n\n\n--- ======= ACTION LISTS =======\n-- [3] Single Rotation\nA[3] = function(icon, isMulti)\n    ----------\n    --- ROTATION VAR ---\n    ----------\n    local EnemyRotation, FriendlyRotation\n    local isSchoolFree = IsSchoolFree()\n    local isMoving = A.Player:IsMoving()\n    local inCombat = Unit(\"player\"):CombatTime() > 0\n    local combatTime = Unit(\"player\"):CombatTime()\n    local inDisarm  = LoC:Get(\"DISARM\") > 0\n    local Energy = Player:Energy()\n    local Chi = Player:Chi()\n    local inMelee             = false \n    \n    --    local PotionTTD = Unit(\"target\"):TimeToDie() > Action.GetToggle(2, \"PotionTTD\")\n    local AutoPotionSelect = Action.GetToggle(2, \"AutoPotionSelect\")\n    local PotionTrue = Action.GetToggle(1, \"Potion\")    \n    local Racial = Action.GetToggle(1, \"Racial\")\n    local UseAoE = Action.GetToggle(2, \"AoE\")\n    local AoETargets = Action.GetToggle(2, \"AoETargets\")\n    local currentTargets = MultiUnits:GetByRange(7)    \n    local MouseoverTarget = UnitName(\"mouseover\")\n    \n    local function ComboStrike(SpellObject)\n        return (not Player:PrevGCD(1, SpellObject))\n    end\n    \n    \n    --actions+=/variable,name=hold_xuen,op=set,value=cooldown.invoke_xuen_the_white_tiger.remains>fight_remains|fight_remains<120&fight_remains>cooldown.serenity.remains&cooldown.serenity.remains>10\n    VarHoldXuen = ((A.InvokeXuen:GetCooldown() > Player:AreaTTD(10)) or (Player:AreaTTD(10) < 120 and Player:AreaTTD(10) > A.Serenity:GetCooldown() and A.Serenity:GetCooldown() > 10))\n    \n    --actions.cd_serenity=variable,name=serenity_burst,op=set,value=cooldown.serenity.remains<1|pet.xuen_the_white_tiger.active&cooldown.serenity.remains>30|fight_remains<20\n    VarSerenityBurst = (A.Serenity:GetCooldown() < 1 or (A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 and A.Serenity:GetCooldown() > 30) or Player:AreaTTD(10) < 20)\n    \n    --------------------------------------\n    -------- ENEMY UNIT ROTATION ---------\n    --------------------------------------\n    local function EnemyRotation(unit)\n        local _, _, _, _, _, _, _, ChannelCheckplayer = UnitChannelInfo(\"player\")\n        local _, _, _, _, ChannelEndMouseover, _, _, ChannelCheckmouseover = UnitChannelInfo(\"mouseover\")\n        \n        local inMelee  = A.TigerPalm:IsInRange(target or unit) \n        -- StormEarthAndFireFixate\n        if target and useStormEarthAndFireFixate and isSchoolFree and A.StormEarthAndFireFixate:IsReady(target) and not A.Serenity:IsSpellLearned() and Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) > 0 then \n            return A.StormEarthAndFireFixate:Show(icon)\n        end    \n        \n        -- Check if target is explosive or totem for dont use AoE spells \n        if Unit(unit):IsExplosives() or (A.Zone ~= \"none\" and Unit(unit):IsTotem()) then\n            inAoE = false\n        end\n        \n        --Explosive Rotation        \n        local function ExplosiveRotation()\n            if Unit(\"target\"):IsExplosives() and ChannelCheckplayer == 113656 then\n                return A.StopCast:Show(icon)\n            end\n            if A.TigerPalm:IsReady(\"target\") and (ComboStrike(A.TigerPalm) or not A.HitCombo:IsTalentLearned()) then\n                return A.TigerPalm:Show(icon)\n            end\n            if A.BlackoutKick:IsReady(\"target\") and (ComboStrike(A.BlackoutKick) or not A.HitCombo:IsTalentLearned()) then\n                return A.BlackoutKick:Show(icon)\n            end\n            if A.RisingSunKick:IsReady(\"target\") then\n                return A.RisingSunKick:Show(icon)\n            end\n        end\n        \n        if Unit(\"target\"):IsExplosives() and ExplosiveRotation() then\n            return true\n        end\n        \n        --Explosive TargetMouseOver\n        A[6] = function(icon, isMulti)        \n            if (A.TigerPalm:IsReady(\"mouseover\") or A.BlackoutKick:IsReady(\"mouseover\") or A.RisingSunKick:IsReady(\"mouseover\")) and A.TigerPalm:IsInRange(\"mouseover\") and Action.GetToggle(2, \"ExplosiveMouseover\") and Unit(\"mouseover\"):IsExplosives() and (not ChannelCheckplayer == 113656 or (Unit(\"mouseover\"):IsExplosives() and ChannelEndMouseover < 2000)) then\n                return A:Show(icon, ACTION_CONST_LEFT)\n            end\n        end        \n        \n        -- Out of combat / Precombat\n        if target and inCombat == 0 and not A.IsInPvP then     \n            local Pull = BossMods:GetPullTimer()    \n            \n            -- PotionofUnbridledFury => ChiWave => ChiBurst  \n            if Pull > 0 then \n                -- Timing\n                local extra_time = GetCurrentGCD() + 0.1\n                local ChiWave, ChiBurst\n                \n                -- ChiWave\n                -- actions.precombat+=/chi_wave,if=!talent.energizing_elixir.enabled\n                if inAoE and isSchoolFree and A.ChiWave:IsReady(target, true, nil, true) and (not A.EnergizingElixir:IsTalentLearned()) and \n                (\n                    not A.IsInPvP or \n                    (\n                        Unit(target):GetRange() <= 25 and\n                        not EnemyTeam(\"HEALER\"):IsBreakAble(25) \n                    )\n                )\n                then \n                    ChiWave = true \n                    extra_time = extra_time + GetGCD()\n                end \n                \n                -- ChiBurst\n                -- actions.precombat+=/chi_burst\n                if inAoE and not isMoving and isSchoolFree and A.ChiBurst:IsReady(target, true, nil, true) and                  \n                (\n                    not A.IsInPvP or \n                    (\n                        Unit(target):GetRange() <= 40 and\n                        not EnemyTeam(\"HEALER\"):IsBreakAble(40) \n                    )\n                )\n                then \n                    ChiBurst = true \n                    extra_time = extra_time + A.ChiBurst:GetSpellCastTime()\n                end \n                \n                \n                -- Pull Rotation\n                if not inDisarm and A.PotionofUnbridledFury:IsReady(target, true, nil, true) and Pull <= 2.5 then \n                    return A.PotionofUnbridledFury:Show(icon)\n                end \n                \n                if ChiWave and not ShouldStop() and Pull <= extra_time then \n                    return A.ChiWave:Show(icon)\n                end \n                \n                if ChiBurst and not ShouldStop() and Pull <= extra_time then \n                    return A.ChiBurst:Show(icon)\n                end\n                \n                -- Return \n                return \n            end         \n        end \n        \n        \n        --#####################\n        --##### SERENITY ######\n        --#####################    \n        local function SerenityRotation()\n            \n            --actions.serenity=fists_of_fury,if=buff.serenity.remains<1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(player):HasBuffs(A.Serenity.ID, true) < 1 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&(active_enemies>=3|active_enemies>1&!cooldown.rising_sun_kick.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (MultiUnits:GetByRange(10, 3) >= 3 or (MultiUnits:GetByRange(10, 3) >= 1 and A.RisingSunKick:GetCooldown() > 0)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fists_of_fury,if=active_enemies>=3\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 3) >= 3 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&buff.weapons_of_order_ww.up&cooldown.rising_sun_kick.remains>2\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0 and A.RisingSunKick:GetCooldown() > 2 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fists_of_fury,interrupt_if=!cooldown.rising_sun_kick.up\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Interrupt for FoF\n            if A.FistsofFury:GetSpellTimeSinceLastCast() < 1 and Unit(player):HasBuffs(A.Serenity.ID, true) > 0 and A.RisingSunKick:IsReady(unit) then\n                return A.StopCast:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick,if=combo_strike&debuff.bonedust_brew.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(\"target\"):HasDeBuffs(A.BonedustBrew.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.serenity+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady() and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.serenity+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike|!talent.hit_combo\n            if A.BlackoutKick:IsReady(unit) and (ComboStrike(A.BlackoutKick) or not A.HitCombo:IsTalentLearned()) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.serenity+=/spinning_crane_kick\n            if A.SpinningCraneKick:IsReady() and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n        end\n        \n        \n        --#####################\n        --####### OPENER ######\n        --#####################\n        \n        local function OpenerRotation()\n            \n            --actions.opener=fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.opener+=/expel_harm,if=talent.chi_burst.enabled&chi.max-chi>=3\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and A.ChiBurst:IsTalentLearned() and Player:ChiDeficit() >= 3 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.opener+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.opener+=/chi_wave,if=chi.max-chi=2\n            if A.ChiWave:IsReady(unit) and Player:ChiDeficit() == 2 then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.opener+=/expel_harm\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.opener+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and Player:ChiDeficit() >= 2 and ComboStrike(A.TigerPalm) then\n                return A.TigerPalm:Show(icon)\n            end\n        end\n        \n        \n        --#####################\n        --######## AOE ########\n        --#####################\n        \n        local function AoERotation()\n            --actions.aoe=whirling_dragon_punch\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            if A.StormEarthAndFire:IsReady(player) and ((inMelee or Unit(\"target\"):GetRange() <= 8) and Action.GetToggle(2, \"SEFOutBurst\") and A.StormEarthAndFire:GetSpellCharges() == 2 and Player:AreaTTD(10) > 15) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            if A.StormEarthAndFireFixate:IsReady(player) and ((inMelee or Unit(\"target\"):GetRange() <= 8) and A.CoordinatedOffensive:IsSoulbindLearned() and A.StormEarthAndFire:GetSpellCastTime() < 1) then\n                return A.StormEarthandFireFixate:Show(icon)\n            end\n            \n            --actions.aoe+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>2|chi.max-chi>=4\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((Player:ChiDeficit() >= 2 \n                    and Player:EnergyTimeToMaxPredicted() > 2) \n                or Player:ChiDeficit() >= 4) then\n                return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.aoe+=/spinning_crane_kick,if=combo_strike&(buff.dance_of_chiji.up|debuff.bonedust_brew.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (Unit(\"player\"):HasBuffs(A.DanceofChiJi.ID, true) > 0 or Unit(\"player\"):HasBuffs(A.BonedustBrew.ID, true) > 0) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.aoe+=/fists_of_fury,if=energy.time_to_max>execute_time|chi.max-chi<=1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (((Player:EnergyTimeToMaxPredicted() > Unit(\"target\"):TimeToDieX(15)) or Unit(\"target\"):IsDummy()) or Player:ChiDeficit() <= 1) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.aoe+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=(talent.whirling_dragon_punch&cooldown.rising_sun_kick.duration>cooldown.whirling_dragon_punch.remains+4)&(cooldown.fists_of_fury.remains>3|chi>=5)\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) and (A.WhirlingDragonPunch:IsTalentLearned() and (10 * Player:SpellHaste()) > (A.WhirlingDragonPunch:GetCooldown() + 4)) and (A.FistsofFury:GetCooldown() > 3 or Player:Chi() >= 5) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.aoe+=/rushing_jade_wind,if=buff.rushing_jade_wind.down\n            if A.RushingJadeWind:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(\"player\"):HasBuffs(A.RushingJadeWind.ID, true) == 0 then\n                return A.RushingJadeWind:Show(icon)\n            end\n            \n            --actions.aoe+=/spinning_crane_kick,if=combo_strike&((cooldown.bonedust_brew.remains>2&(chi>3|cooldown.fists_of_fury.remains>6)&(chi>=5|cooldown.fists_of_fury.remains>2))|energy.time_to_max<=3)\n            if A.SpinningCraneKick:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and (ComboStrike(A.SpinningCraneKick) and (((A.BonedustBrew:GetCooldown() > 2 or not (C_Covenants.GetActiveCovenantID() == 4)) and (Player:Chi() > 3 or (A.FistsofFury:GetCooldown() > 6)) and (Player:Chi() >= 5 or A.FistsofFury:GetCooldown() > 2)) or Player:EnergyTimeToMaxPredicted() <= 3)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.aoe+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.aoe+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.aoe+=/chi_burst,if=chi.max-chi>=2\n            if A.ChiBurst:IsReady(player) and Player:ChiDeficit() >= 2 and not fsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.aoe+=/crackling_jade_lightning,if=buff.the_emperors_capacitor.stack>19&energy.time_to_max>execute_time-1&cooldown.fists_of_fury.remains>execute_time\n            if A.CracklingJadeLightning:IsReady(unit) and Unit(\"player\"):HasBuffs(A.EmperorsCapacitorStack.ID, true) > 19 and Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1) and A.FistsofFury:GetCooldown() > Unit(\"target\"):TimeToDieX(15) then\n                return A.CracklingJadeLightning:Show(icon)\n            end\n            \n            --actions.aoe+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=chi.max-chi>=2&(!talent.hit_combo|combo_strike)\n            if A.TigerPalm:IsReady(unit) and Player:ChiDeficit() >= 2 and (not A.HitCombo:IsTalentLearned() or ComboStrike(A.TigerPalm)) then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            \n            --actions.aoe+=/chi_wave,if=combo_strike\n            if A.ChiWave:IsReady(unit) and ComboStrike(A.ChiWave) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.aoe+=/flying_serpent_kick,if=buff.bok_proc.down,interrupt=1\n            if A.FlyingSerpentKick:IsReady(unit) and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and Unit(\"target\"):GetRange() <= 8 and Unit(\"player\"):HasBuffs(A.BlackoutKickBuff, true) == 0 and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then\n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n            \n            --actions.aoe+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&(buff.bok_proc.up|talent.hit_combo&prev_gcd.1.tiger_palm&chi=2&cooldown.fists_of_fury.remains<3|chi.max-chi<=1&prev_gcd.1.spinning_crane_kick&energy.time_to_max<3)\n            if A.BlackoutKick:IsReady(unit) and (ComboStrike(A.BlackoutKick) and ((Unit(\"target\"):HasBuffs(A.BlackoutKickBuff.ID, true) > 0) or (A.HitCombo:IsTalentLearned() and Player:PrevGCD(1, A.TigerPalm) and Player:Chi() == 2 and A.FistsofFury:GetCooldown() < 3) or (Player:ChiDeficit() <= 1 and Player:PrevGCD(1, A.SpinningCraneKick) and Player:EnergyTimeToMaxPredicted() < 3)))then\n                return A.BlackoutKick:Show(icon)\n            end\n        end\n        \n        --#####################\n        --#### COOLDOWNSEF ####\n        --#####################\n        \n        local function Cooldownsef()\n            --actions.cd_sef=invoke_xuen_the_white_tiger,if=!variable.hold_xuen|fight_remains<25\n            if A.InvokeXuen:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (not VarHoldXuen or Player:AreaTTD(10) < 25) then\n                return A.InvokeXuen:Show(icon)\n            end\n            \n            --actions.cd_sef+=/arcane_torrent,if=chi.max-chi>=1\n            if A.ArcaneTorrent:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ArcaneTorrent:Show(icon)\n            end\n            \n            --actions.cd_sef+=/touch_of_death,if=buff.storm_earth_and_fire.down&pet.xuen_the_white_tiger.active|fight_remains<10|fight_remains>180\n            if A.TouchofDeath:IsReady(unit) and ((Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 and A.InvokeXuen:GetSpellTimeSinceLastCast() < 24) or Player:AreaTTD(10) < 10 or (Player:AreaTTD(10) > 180 or Unit(\"target\"):IsDummy())) then\n                return    A.TouchofDeath:Show(icon)\n            end\n            \n            --actions.cd_sef+=/weapons_of_order,if=(raid_event.adds.in>45|raid_event.adds.up)&cooldown.rising_sun_kick.remains<execute_time\n            if A.WeaponsofOrder:IsReady(player)  and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.RisingSunKick:GetCooldown() < Unit(\"target\"):TimeToDieX(15) or Unit(\"target\"):IsDummy()) then\n                return A.WeaponsofOrder:Show(icon)\n            end\n            \n            --actions.cd_sef+=/faeline_stomp,if=combo_strike&(raid_event.adds.in>10|raid_event.adds.up)\n            if A.FaelineStomp:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.FaelineStomp) then\n                return A.FaelineStomp:Show(icon)\n            end\n            \n            --actions.cd_sef+=/fallen_order,if=raid_event.adds.in>30|raid_event.adds.up\n            if A.FallenOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FallenOrder:Show(icon)\n            end\n            \n            --actions.cd_sef+=/bonedust_brew,if=raid_event.adds.in>50|raid_event.adds.up,line_cd=60\n            if A.BonedustBrew:IsReady(unit) and A.BonedustBrew:GetSpellTimeSinceLastCast() > 60 then\n                return A.BonedustBrew:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire_fixate,if=conduit.coordinated_offensive.enabled\n            if A.StormEarthAndFireFixate:IsReady(player) and (A.CoordinatedOffensive:IsSoulbindLearned() and A.StormEarthAndFire:GetSpellTimeSinceLastCast() < 1) then\n                return A.StormEarthAndFireFixate:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire,if=cooldown.storm_earth_and_fire.charges=2|fight_remains<20|(raid_event.adds.remains>15|!covenant.kyrian&((cooldown.invoke_xuen_the_white_tiger.remains>cooldown.storm_earth_and_fire.full_recharge_time|variable.hold_xuen))&cooldown.fists_of_fury.remains<=9&chi>=2&cooldown.whirling_dragon_punch.remains<=12)\n            if A.StormEarthAndFire:IsReady(player) and ((inMelee or Unit(\"target\"):GetRange() <= 8) and not A.StormEarthAndFireFixate:IsReady(unit) and (A.StormEarthAndFire:GetSpellCharges() == 2 or (Player:AreaTTD(10) < 20 or ((Unit(\"target\"):IsDummy() and (300 - Unit(\"player\"):CombatTime()) < 20))) or (C_Covenants.GetActiveCovenantID() ~= 1) and (((A.InvokeXuen:GetCooldown() > A.StormEarthAndFire:GetSpellChargesFullRechargeTime()) or VarHoldXuen)) and A.FistsofFury:GetCooldown() <= 9 and Player:Chi() >= 2 and A.WhirlingDragonPunch:GetCooldown() <= 12)) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            --actions.cd_sef+=/storm_earth_and_fire,if=covenant.kyrian&(buff.weapons_of_order.up|(fight_remains<cooldown.weapons_of_order.remains|cooldown.weapons_of_order.remains>cooldown.storm_earth_and_fire.full_recharge_time)&cooldown.fists_of_fury.remains<=9&chi>=2&cooldown.whirling_dragon_punch.remains<=12)\n            if A.StormEarthAndFire:IsReady(player) and (not A.StormEarthAndFireFixate:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (C_Covenants.GetActiveCovenantID() == 1 and (Unit(\"player\"):HasBuffs(A.WeaponsofOrder.ID, true) > 0 or ((Player:AreaTTD(10) < A.WeaponsofOrder:GetCooldown()) or (A.WeaponsofOrder:GetCooldown() > A.StormEarthAndFire:GetSpellChargesFullRechargeTime())) and A.FistsofFury:GetCooldown() <= 9 and Player:Chi() >=2 and A.WhirlingDragonPunch:GetCooldown() <= 12))) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.cd_sef+=/touch_of_karma,if=fight_remains>159|pet.xuen_the_white_tiger.active|variable.hold_xuen\n            if A.TouchofKarma:IsReady(unit) and ((Player:AreaTTD(10) > 159 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or VarHoldXuen) then\n                return A.TouchofKarma:Show(icon)\n            end\n            \n            --actions.cd_sef+=/blood_fury,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<20\n            if A.BloodFury:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 20) then\n                return A.BloodFury:Show(icon)\n            end\n            \n            --actions.cd_sef+=/berserking,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<15\n            if A.Berserking:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 15) then\n                return A.Berserking:Show(icon)\n            end\n            \n            --actions.cd_sef+=/lights_judgment\n            if A.LightsJudgment:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.LightsJudgment:Show(icon)\n            end\n            \n            --actions.cd_sef+=/fireblood,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<10\n            if A.Fireblood:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 10) then\n                return A.Fireblood:Show(icon)\n            end\n            \n            --actions.cd_sef+=/ancestral_call,if=cooldown.invoke_xuen_the_white_tiger.remains>30|variable.hold_xuen|fight_remains<20\n            if A.AncestralCall:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.InvokeXuen:GetCooldown() > 30 or VarHoldXuen or Player:AreaTTD(10) < 20) then\n                return A.AncestralCall:Show(icon)\n            end\n            \n            --actions.cd_sef+=/bag_of_tricks,if=buff.storm_earth_and_fire.down\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 then\n                return A.BagofTricks:Show(icon)\n            end\n        end\n        \n        --#############################\n        --##### COOLDOWN SERENITY #####\n        --#############################\n        \n        local function CooldownSerenity()\n            --actions.cd_serenity+=/invoke_xuen_the_white_tiger,if=!variable.hold_xuen|fight_remains<25\n            if A.InvokeXuen:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (not VarHoldXuen or Player:AreaTTD(10) < 25) then\n                return A.InvokeXuen:Show(icon)\n            end\n            \n            -- Trinket 1\n            if A.Trinket1:IsReady(unit) and Unit(unit):GetRange() <= 7  then\n                return A.Trinket1:Show(icon)    \n            end\n            \n            -- Trinket 2\n            if A.Trinket2:IsReady(unit) and Unit(unit):GetRange() <= 7 then\n                return A.Trinket2:Show(icon)    \n            end   \n            \n            --actions.cd_serenity+=/blood_fury,if=variable.serenity_burst\n            if A.BloodFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.BloodFury:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/berserking,if=variable.serenity_burst\n            if A.Berserking:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.Berserking:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/arcane_torrent,if=chi.max-chi>=1\n            if A.ArcaneTorrent:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ArcaneTorrent:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/lights_judgment\n            if A.LightsJudgment:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.LightsJudgment:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/fireblood,if=variable.serenity_burst\n            if A.Fireblood:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.Fireblood:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/ancestral_call,if=variable.serenity_burst\n            if A.AncestralCall:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.AncestralCall:Show(icon)\n            end    \n            \n            --actions.cd_serenity+=/bag_of_tricks,if=variable.serenity_burst\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and VarSerenityBurst then\n                return A.BagofTricks:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/touch_of_death,if=fight_remains>180|pet.xuen_the_white_tiger.active|fight_remains<10\n            if A.TouchofDeath:IsReady(unit) and ((Player:AreaTTD(10) > 180 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) < 10) then\n                return A.TouchofDeath:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/touch_of_karma,if=fight_remains>90|pet.xuen_the_white_tiger.active|fight_remains<10\n            if A.TouchofKarma:IsReady(unit) and ((Player:AreaTTD(10) > 90 or Unit(\"target\"):IsDummy()) or A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) < 10) then\n                return A.TouchofKarma:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/weapons_of_order,if=cooldown.rising_sun_kick.remains<execute_time\n            if A.WeaponsofOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((A.RisingSunKick:GetCooldown() < Unit(\"target\"):TimeToDieX(15)) or Unit(\"target\"):IsDummy()) then\n                return A.WeaponsofOrder:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/faeline_stomp\n            if A.FaelineStomp:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FaelineStomp:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/fallen_order\n            if A.FallenOrder:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FallenOrder:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/bonedust_brew\n            if A.BonedustBrew:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.BonedustBrew:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/serenity,if=cooldown.rising_sun_kick.remains<2|fight_remains<15\n            if A.Serenity:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (A.RisingSunKick:GetCooldown() < 2 or Player:AreaTTD(10) < 15) then\n                return A.Serenity:Show(icon)\n            end\n            \n            --actions.cd_serenity+=/bag_of_tricks\n            if A.BagofTricks:IsReady(unit) and (inMelee or Unit(\"target\"):GetRange() <= 8) then \n                return A.BagofTricks:Show(icon)\n            end\n        end\n        \n        --#####################\n        --###### WEAPONS ######\n        --#####################\n        local function WeaponsRotation()\n            \n            --actions.weapons_of_order=call_action_list,name=cd_sef,if=!talent.serenity\n            if not A.Serenity:IsTalentLearned() and Cooldownsef() then\n                return true\n            end\n            \n            --actions.weapons_of_order+=/call_action_list,name=cd_serenity,if=talent.serenity\n            if A.Serenity:IsTalentLearned() and CooldownSerenity() then\n                return true\n            end\n            \n            --actions.weapons_of_order+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>3\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 2 and Player:EnergyTimeToMaxPredicted() > 3 then\n                return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains\n            if A.RisingSunKick:IsReady(unit) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fists_of_fury,if=active_enemies>=2&buff.weapons_of_order_ww.remains<1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 2) >= 2 and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) < 1 then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/whirling_dragon_punch,if=active_enemies>=2\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and MultiUnits:GetByRange(10, 2) >= 2 then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=combo_strike&active_enemies>=3&buff.weapons_of_order_ww.up\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and MultiUnits:GetByRange(10, 3) >= 3 and Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&active_enemies<=2\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and MultiUnits:GetByRange(10, 2) <= 2 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/whirling_dragon_punch\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fists_of_fury,interrupt=1,if=buff.storm_earth_and_fire.up&raid_event.adds.in>cooldown.fists_of_fury.duration*0.6\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FistsofFury:GetSpellTimeSinceLastCast() < 1 and Unit(player):HasBuffs(A.WeaponsofOrder.ID, true) > 0 and Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) > 0 then\n                return A.StopCast:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/spinning_crane_kick,if=buff.chi_energy.stack>30-5*active_enemies\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > (30 - (5 * (MultiUnits:GetByRange(10, 6)))) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/chi_burst,if=chi.max-chi>=(1+active_enemies>1)\n            if A.ChiBurst:IsReady(player) and Player:ChiDeficit() >= (1 + MultiUnits:GetByRange(10, 6)) and not IsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=(!talent.hit_combo|combo_strike)&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and (not A.HitCombo:IsTalentLearned() or ComboStrike(A.TigerPalm)) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/chi_wave\n            if A.ChiWave:IsReady(unit) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=chi>=3|buff.weapons_of_order_ww.up\n            if A.BlackoutKick:IsReady(unit) and (Player:Chi() >= 3 or Unit(\"player\"):HasBuffs(A.WeaponsofOrderWW.ID, true) > 0) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.weapons_of_order+=/flying_serpent_kick,interrupt=1\n            if target and Unit(\"target\"):GetRange() <= 8 and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and A.FlyingSerpentKick:IsReady(target, true) and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then \n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for Kick\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n        end\n        \n        --#####################\n        --######## ST #########\n        --#####################\n        local function STRotation()\n            --actions.st=whirling_dragon_punch,if=raid_event.adds.in>cooldown.whirling_dragon_punch.duration*0.8|raid_event.adds.up\n            if A.WhirlingDragonPunch:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) then\n                return A.WhirlingDragonPunch:Show(icon)\n            end\n            \n            if A.StormEarthAndFire:IsReady(player) and ((inMelee or Unit(\"target\"):GetRange() <= 8) and Action.GetToggle(2, \"SEFOutBurst\") and A.StormEarthAndFire:GetSpellCharges() == 2 and Player:AreaTTD(10) > 15) then\n                return A.StormEarthAndFire:Show(icon)\n            end\n            \n            if A.StormEarthAndFireFixate:IsReady(player) and (A.CoordinatedOffensive:IsSoulbindLearned() and A.StormEarthAndFire:GetSpellTimeSinceLastCast() < 1) then\n                return A.StormEarthAndFireFixate:Show(icon)\n            end\n            \n            --actions.st+=/energizing_elixir,if=chi.max-chi>=2&energy.time_to_max>3|chi.max-chi>=4&(energy.time_to_max>2|!prev_gcd.1.tiger_palm)\n            if A.EnergizingElixir:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ((Player:ChiDeficit() >= 2 and Player:EnergyTimeToMaxPredicted() > 3) or (Player:ChiDeficit() >= 4 and (Player:EnergyTimeToMaxPredicted() > 2 or not Player:PrevGCD(1, A.TigerPalm))))\n            then return A.EnergizingElixir:Show(icon)\n            end\n            \n            --actions.st+=/spinning_crane_kick,if=combo_strike&buff.dance_of_chiji.up&(raid_event.adds.in>buff.dance_of_chiji.remains-2|raid_event.adds.up)\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and Unit(player):HasBuffs(A.DanceofChiJi.ID, true) > 0 then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.st+=/rising_sun_kick,target_if=min:debuff.mark_of_the_crane.remains,if=cooldown.serenity.remains>1|!talent.serenity\n            if A.RisingSunKick:IsReady(unit) and ComboStrike(A.RisingSunKick) and (A.Serenity:GetCooldown() > 1 or not A.Serenity:IsTalentLearned()) then\n                return A.RisingSunKick:Show(icon)\n            end\n            \n            --actions.st+=/fists_of_fury,if=(raid_event.adds.in>cooldown.fists_of_fury.duration*0.8|raid_event.adds.up)&(energy.time_to_max>execute_time-1|chi.max-chi<=1|buff.storm_earth_and_fire.remains<execute_time+1)|fight_remains<execute_time+1\n            if A.FistsofFury:IsReady(player) and (inMelee or Unit(unit):GetRange() <= 8) and ((Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1)) or Player:ChiDeficit() <= 1 or ((Unit(player):HasBuffs(A.StormEarthAndFire.ID, true) < (Unit(\"target\"):TimeToDieX(15) + 1)) or Unit(\"target\"):IsDummy()) or (Player:AreaTTD(10) < (Unit(\"target\"):TimeToDieX(15) + 1) or Unit(\"target\"):IsDummy())) then\n                return A.FistsofFury:Show(icon)\n            end\n            \n            --actions.st+=/crackling_jade_lightning,if=buff.the_emperors_capacitor.stack>19&energy.time_to_max>execute_time-1&cooldown.rising_sun_kick.remains>execute_time|buff.the_emperors_capacitor.stack>14&(cooldown.serenity.remains<5&talent.serenity|cooldown.weapons_of_order.remains<5&covenant.kyrian|fight_remains<5)\n            if A.CracklingJadeLightning:IsReady(unit) and (Unit(player):HasBuffsStacks(A.EmperorsCapacitorStack.ID, true) > 19 and Player:EnergyTimeToMaxPredicted() > (Unit(\"target\"):TimeToDieX(15) - 1) and (A.RisingSunKick:GetCooldown() > Unit(\"target\"):TimeToDieX(15))) or (Unit(player):HasBuffsStacks(A.EmperorsCapacitorStack.ID, true) > 19 and ((A.Serenity:GetCooldown() < 5 and A.Serenity:IsTalentLearned()) or (A.WeaponsofOrder:GetCooldown() < 5 and C_Covenants.GetActiveCovenantID() == 1) or (Player:AreaTTD() < 5))) then\n                return A.CracklingJadeLightning:Show(icon)\n            end\n            \n            --actions.st+=/rushing_jade_wind,if=buff.rushing_jade_wind.down&active_enemies>1\n            if A.RushingJadeWind:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Unit(player):HasBuffs(A.RushingJadeWind.ID, true) == 0 and MultiUnits:GetByRange(10, 2) > 1 then\n                return A.RushingJadeWind:Show(icon)\n            end\n            \n            --actions.st+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi<3\n            if A.FistoftheWhiteTiger:IsReady(unit) and Player:Chi() < 3 then\n                return A.FistoftheWhiteTiger:Show(icon)\n            end\n            \n            --actions.st+=/expel_harm,if=chi.max-chi>=1\n            if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and Player:ChiDeficit() >= 1 then\n                return A.ExpelHarm:Show(icon)\n            end\n            \n            --actions.st+=/chi_burst,if=chi.max-chi>=1&active_enemies=1&raid_event.adds.in>20|chi.max-chi>=2&active_enemies>=2\n            if A.ChiBurst:IsReady(player) and ((Player:ChiDeficit() >= 1 and MultiUnits:GetByRange(10, 3) == 1) or (Player:ChiDeficit() >= 2 and MultiUnits:GetByRange(10, 3) >= 2)) and not IsMoving then\n                return A.ChiBurst:Show(icon)\n            end\n            \n            --actions.st+=/chi_wave\n            if A.ChiWave:IsReady(unit) then\n                return A.ChiWave:Show(icon)\n            end\n            \n            --actions.st+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2&buff.storm_earth_and_fire.down\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 and Unit(\"player\"):HasBuffs(A.StormEarthAndFire.ID, true) == 0 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.st+=/spinning_crane_kick,if=buff.chi_energy.stack>30-5*active_enemies&buff.storm_earth_and_fire.down&(cooldown.rising_sun_kick.remains>2&cooldown.fists_of_fury.remains>2|cooldown.rising_sun_kick.remains<3&cooldown.fists_of_fury.remains>3&chi>3|cooldown.rising_sun_kick.remains>3&cooldown.fists_of_fury.remains<3&chi>4|chi.max-chi<=1&energy.time_to_max<2)|buff.chi_energy.stack>10&fight_remains<7\n            if A.SpinningCraneKick:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and ComboStrike(A.SpinningCraneKick) and (Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > (30 - (5 * (MultiUnits:GetByRange(10, 6)))) and Unit(player):HasBuffs(A.StormEarthandFire.ID, true) == 0 and ((A.RisingSunKick:GetCooldown() > 2 and A.FistsofFury:GetCooldown() > 2) or (A.RisingSunKick:GetCooldown() < 3 and A.FistsofFury:GetCooldown() > 3 and Player:Chi() > 3) or (A.RisingSunKick:GetCooldown() > 3 and A.FistsofFury:GetCooldown() < 3 and Player:Chi() > 4) or (Player:ChiDeficit() <= 1 and Player:EnergyTimeToMaxPredicted() < 2)) or (Unit(player):HasBuffsStacks(A.ChiEnergy.ID, true) > 10 and Player:AreaTTD(10) < 7)) then\n                return A.SpinningCraneKick:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&(talent.serenity&cooldown.serenity.remains<3|cooldown.rising_sun_kick.remains>1&cooldown.fists_of_fury.remains>1|cooldown.rising_sun_kick.remains<3&cooldown.fists_of_fury.remains>3&chi>2|cooldown.rising_sun_kick.remains>3&cooldown.fists_of_fury.remains<3&chi>3|chi>5|buff.bok_proc.up)\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and ((A.Serenity:IsTalentLearned() and A.Serenity:GetCooldown() < 3) or (A.RisingSunKick:GetCooldown() > 1 and A.FistsofFury:GetCooldown() > 1) or (A.RisingSunKick:GetCooldown() < 3 and A.FistsofFury:GetCooldown() > 3 and Player:Chi() > 2) or (A.RisingSunKick:GetCooldown() > 3 and A.FistsofFury:GetCooldown() < 3 and Player:Chi() > 3) or (Player:Chi() > 5) or (Unit(\"player\"):HasBuffs(A.BlackoutKickBuff.ID, true) > 0)) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.st+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains+(debuff.recently_rushing_tiger_palm.up*20),if=combo_strike&chi.max-chi>=2\n            if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 then\n                return A.TigerPalm:Show(icon)\n            end\n            \n            --actions.st+=/flying_serpent_kick,interrupt=1\n            if A.FlyingSerpentKick:IsReady(player) and Action.GetToggle(2, \"ToggleFlying\") and not isMoving and LoC:Get(\"ROOT\") == 0 and Unit(\"target\"):GetRange() <= 8 and A.FlyingSerpentKick:AbsentImun(target, GetAttackType()) and Unit(player):HasBuffs(A.BlackoutKickBuff.ID, true) == 0 and (not A.IsInPvP or not EnemyTeam(\"HEALER\"):IsBreakAble(25)) then \n                return A.FlyingSerpentKick:Show(icon)\n            end\n            \n            -- Cancel for FoF with SEF and Weapons\n            if A.FlyingSerpentKick:GetSpellTimeSinceLastCast() < 0.5 and Action.GetToggle(2, \"ToggleFlying\") then\n                return A.FlyingSerpentKickJump:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&cooldown.fists_of_fury.remains<3&chi=2&prev_gcd.1.tiger_palm&energy.time_to_50<1\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and A.FistsofFury:GetCooldown() < 3 and Player:Chi() == 2 and Player:PrevGCD(1, A.TigerPalm) and Player:EnergyTimeToX(50) < 1 then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n            --actions.st+=/blackout_kick,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&energy.time_to_max<2&(chi.max-chi<=1|prev_gcd.1.tiger_palm)\n            if A.BlackoutKick:IsReady(unit) and ComboStrike(A.BlackoutKick) and Player:EnergyTimeToMaxPredicted() < 2 and (Player:ChiDeficit() <= 1 or Player:PrevGCD(1, A.TigerPalm)) then\n                return A.BlackoutKick:Show(icon)\n            end\n            \n        end\n        \n        --#####################\n        --###### GENERIC ######\n        --#####################\n        \n        --actions=auto_attack\n        \n        --actions+=/spear_hand_strike,if=target.debuff.casting.react        \n        local Interrupt = Interrupts(unit)\n        if Interrupt then \n            return Interrupt:Show(icon)\n        end    \n        \n        --actions+=/potion,if=(buff.serenity.up|buff.storm_earth_and_fire.up)&pet.xuen_the_white_tiger.active|fight_remains<=60\n        --if A.PotionofSpectralAgility:IsReady(player) and Action.GetToggle(1, \"Potion\") and IsItemInRange(32321) and ((Unit(player):HasBuffs(A.Serenity.ID, true) > 0 or Unit(player):HasBuffs(A.StormEarthandFire.ID, true) > 0) and (A.InvokeXuen:GetSpellTimeSinceLastCast() < 24 or Player:AreaTTD(10) <= 60))\n        --then\n        -- Notification                    \n        --    A.Toaster:SpawnByTimer(\"TripToast\", 0, \"Combat Potion!\", \"Using Combat Potion!\", A.PotionofSpectralAgility.ID)  \n        --    return A.PotionofSpectralAgility:Show(icon)\n        --end\n        --actions+=/call_action_list,name=serenity,if=buff.serenity.up\n        if Unit(\"player\"):HasBuffs(A.Serenity.ID, true) > 0 and SerenityRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=weapons_of_order,if=buff.weapons_of_order.up\n        if Unit(\"player\"):HasBuffs(A.WeaponsofOrder.ID, true) > 0 and WeaponsRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=opener,if=time<4&chi<5&!pet.xuen_the_white_tiger.active\n        if Unit(player):CombatTime() < 4 and Player:Chi() < 5 and A.InvokeXuen:GetSpellTimeSinceLastCast() > 24 and OpenerRotation() then\n            return true\n        end\n        \n        --actions+=/fist_of_the_white_tiger,target_if=min:debuff.mark_of_the_crane.remains,if=chi.max-chi>=3&(energy.time_to_max<1|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.FistoftheWhiteTiger:IsReady(unit) and Player:ChiDeficit() >= 3 and (Player:EnergyTimeToMaxPredicted() < 1 or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or (A.WeaponsofOrder:GetCooldown() < 2))  then\n            return A.FistoftheWhiteTiger:Show(icon)\n        end\n        \n        --actions+=/expel_harm,if=chi.max-chi>=1&(energy.time_to_max<1|cooldown.serenity.remains<2|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.ExpelHarm:IsReady(player) and (inMelee or Unit(\"target\"):GetRange() <= 8) and (Player:ChiDeficit() >= 1 and (Player:EnergyTimeToMaxPredicted() < 1 or (A.Serenity:GetCooldown() < 2 and A.Serenity:IsTalentLearned()) or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or A.WeaponsofOrder:GetCooldown() <2)) then\n            return A.ExpelHarm:Show(icon)\n        end\n        \n        --actions+=/tiger_palm,target_if=min:debuff.mark_of_the_crane.remains,if=combo_strike&chi.max-chi>=2&(energy.time_to_max<1|cooldown.serenity.remains<2|energy.time_to_max<4&cooldown.fists_of_fury.remains<1.5|cooldown.weapons_of_order.remains<2)\n        if A.TigerPalm:IsReady(unit) and ComboStrike(A.TigerPalm) and Player:ChiDeficit() >= 2 and (Player:EnergyTimeToMaxPredicted() < 1 or (A.Serenity:GetCooldown() < 2 and A.Serenity:IsTalentLearned()) or (Player:EnergyTimeToMaxPredicted() < 4 and A.FistsofFury:GetCooldown() < 1.5) or (A.WeaponsofOrder:GetCooldown() < 2)) then\n            return A.TigerPalm:Show(icon)\n        end\n        \n        --actions+=/call_action_list,name=cd_sef,if=!talent.serenity\n        if A.BurstIsON(unit) and not A.Serenity:IsTalentLearned() and Cooldownsef() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=cd_serenity,if=talent.serenity\n        if A.BurstIsON(unit) and A.Serenity:IsTalentLearned() and CooldownSerenity() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=st,if=active_enemies<3\n        if MultiUnits:GetByRange(10, 3) < 3 and STRotation() then\n            return true\n        end\n        \n        --actions+=/call_action_list,name=aoe,if=active_enemies>=3\n        if MultiUnits:GetByRange(10, 3) >= 3 and AoERotation() then\n            return true\n        end\n        \n    end\n    --Finished Enemy Rotation\n    -- Defensive\n    local SelfDefensive = SelfDefensives()\n    if SelfDefensive then \n        return SelfDefensive:Show(icon)\n    end \n    \n    -- Mouseover\n    if A.IsUnitEnemy(\"mouseover\") then\n        unit = \"mouseover\"\n        if EnemyRotation(unit) then \n            return true \n        end \n    end \n    \n    -- Target  \n    if A.IsUnitEnemy(\"target\") then \n        unit = \"target\"\n        if EnemyRotation(unit) then \n            return true\n        end       \n    end\nend\n\n--Finished",
 				}, -- [2]
 				{
 					["Name"] = "Dynamic Bar",
@@ -25030,7 +40330,7 @@ TellMeWhenDB = {
 				}, -- [7]
 				["n"] = 7,
 			},
-			["ForceNoBlizzCC"] = true,
+			["Version"] = 90301,
 			["Locked"] = true,
 		},
 	},
