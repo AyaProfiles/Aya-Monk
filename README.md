@@ -1,5 +1,7 @@
-# SL's Monk
+# SL's MW Monk
 
-Big news! The awesome Spiken has been helping me write some PvP logic and extra bug fixes into the code :). We will be moving this over to Scortches in the future.
+This profile should only be used for Mistweaver. It is ported from GGL's MW monk from BFA, all credits to Anyi on this!
 
-Untill it is pushed continue to use this profile for now
+Note: I haven't made any big changes from BFA and don't plan to support it much since I don't typically use healer classes.
+
+The WW and BM portion are being maintained in Scortch profiles and will be updated there
